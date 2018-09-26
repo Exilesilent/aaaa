@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>慢慢买-比价商城</title>
+    <link rel="stylesheet" href="css/index.css">
+</head>
+
+<body>
+    <!-- 头部区域 -->
+    <header id="header">
+        <div class="logo">
+            <a href="#">
+                <img src="images/header_logo.png" alt="">
+            </a>
+        </div>
+        <div class="app">
+            <img src="images/header_app.png" alt="">
+        </div>
+    </header>
+    <!-- 搜索区域 -->
+    <section id="search">
+        <div class="search">
+            <div class="searchBar">
+                <input type="text" placeholder="请输入你想比价的商品">
+            </div>
+            <div class="searchSub">
+                <input type="submit" value="搜索">
+            </div>
+        </div>
+    </section>
+    <!-- 导航区域 -->
+    <nav id="nav">
+        <div>
+            <a href="#">
+                <img src="images/ic_search.png" alt="">
+                <span>比价搜索</span>
+            </a>
+        </div>
+        <div>
+            <a href="#">
+                <img src="images/ic_cu.png" alt="">
+                <span>省钱控</span>
+            </a>
+        </div>
+        <div>
+            <a href="#">
+                <img src="images/ic_coudanpin.png" alt="">
+                <span>国内折扣</span>
+            </a>
+        </div>
+        <div>
+            <a href="#">
+                <img src="images/ic_bcj.png" alt="">
+                <span>白菜价</span>
+            </a>
+        </div>
+        <div>
+            <a href="#">
+                <img src="images/ic_temai.png" alt="">
+                <span>小时风云榜</span>
+            </a>
+        </div>
+        <div>
+            <a href="#">
+                <img src="images/ic_trend.png" alt="">
+                <span>查历史价</span>
+            </a>
+        </div>
+        <div>
+            <a href="#">
+                <img src="images/ic_pp.png" alt="">
+                <span>品牌大全</span>
+            </a>
+        </div>
+        <div>
+            <a href="#">
+                <img src="images/ic_mall.png" alt="">
+                <span>凑单品</span>
+            </a>
+        </div>
+
+    </nav>
+    <!-- 商品区域 -->
+    <section id="products">
+        <div class="top">
+            
+        </div>
+    </section>
+    <!-- 底部区域 -->
+    <footer id="footer"></footer>
+</body>
+
+</html>
