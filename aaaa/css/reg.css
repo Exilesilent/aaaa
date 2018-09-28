@@ -141,7 +141,7 @@ body{
     width: 1rem;
 }
 #main button{
-    width: 40%;
+    width: 35%;
     height: 0.38rem;
     background-color: #d4d4d4;
     background: -webkit-gradient(linear,0 0,0 100%,from(#ffffff),to(#d4d4d4));
