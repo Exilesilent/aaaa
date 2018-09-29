@@ -42,17 +42,22 @@
     var btn = document.querySelector('.input');
     var p = document.querySelector('.input p');
     var input = document.querySelector('.input input');
-    btn.onclick = function(){
+    btn.onclick = function () {
         p.style.display = 'none';
         input.style.display = 'block';
         input.focus();
         btn.style.height = '31px';
     }
-    input.onblur = function(){
-        p.style.display = 'block';
-        input.style.display = 'none';
-        btn.style.height = '49px';
+    input.onblur = function () {
+        if (input.value.length > 0) {
+            p.style.display = 'none';
+            input.style.display = 'block';
+        } else {
+            p.style.display = 'block';
+            input.style.display = 'none';
+            btn.style.height = '49px';
+        }
     }
-
 </script>
+
 </html>
