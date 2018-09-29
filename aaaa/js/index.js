@@ -30,3 +30,6 @@ home.getHomeShop();
 
 
 //点击商品跳转请求
+var btn = document.querySelector('.input');
+console.log(btn);
+
