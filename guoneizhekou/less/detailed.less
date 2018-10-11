@@ -1,0 +1,177 @@
+@import 'base.less';
+body{
+    background-color: #f2f2f2;
+    padding: 80px 0px 0px;
+}
+#main {
+    max-width: 960px;
+    margin: 0px auto;
+    // margin-top: 84px;
+    background-color: #fff;
+    .detailed {
+        ul {
+            >li {
+                .title {
+                    color: #5a5a5a;
+                    padding: 10px;
+                }
+                .price {
+                    padding-left: 10px;
+                    color: @a-color;
+                    font-size: 14px;
+                }
+                .time {
+                    padding: 10px;
+                    font-size: 12px;
+                    color: #999999;
+                }
+                .content {
+                    p {
+                        padding: 10px;
+                        font-size: 14px;
+                        color: #656565;
+                    }
+                }
+                .picture {
+                    width: 100%;
+                    height: 120px;
+                    .pull-right {
+                        margin-right: 10px;
+                        img {
+                            width: 120px;
+                            height: 120px;
+                        }
+                    }
+                }
+                .buy {
+                    display: block;
+                    margin-left: 10%;
+                    span {
+                        display: block;
+                        width: 90%;
+                        height: 40px;
+                        line-height: 40px;
+                        text-align: center;
+                        color: #fff;
+                        background-color: #ff9000;
+                        margin-top: 20px;
+                        border-radius: 5px;
+                    }
+                }
+                .label {
+                    width: 100%;
+                    height: 60px;
+                    line-height: 60px;
+                    padding-left: 20px;
+                    margin-top: 20px;
+                    background-color: #f2f2f2;
+                }
+            }
+        }
+    }
+}
+
+/* 底部css代码 */
+
+#footer {
+    .title {
+        height: 35px;
+        margin-bottom: 15px;
+        background-color: #f1f1f1;
+        padding-left: 10px;
+        line-height: 35px;
+        font-size: 14px;
+        box-shadow: 0px 1px 10px 1px #ccc;
+    }
+    .footer-nav {
+        // margin-top: -5px;
+        border-top: 1px solid #c7c7c7;
+        border-bottom: 1px solid #c7c7c7;
+        ul {
+            display: flex;
+            >li {
+                flex: 1;
+                text-align: center;
+                height: 30px;
+                >a {
+                    font-size: 14px;
+                    i.icon-xiangshangjiantou {
+                        font-size: 18px;
+                        color: gray;
+                    }
+                }
+                &:nth-of-type(3) {
+                    width: 33.33%;
+                }
+                &+li {
+                    border-left: 1px solid #c7c7c7;
+                }
+            }
+        }
+    }
+    .app {
+        height: 60px;
+        text-align: center;
+        padding: 6px;
+        >a {
+            font-size: 14px;
+            &:first-child {
+                color: @a-color;
+            }
+            &:nth-of-type(3) {
+                color: #7f7f7f;
+            }
+        }
+        .http {
+            a {
+                color: #7f7f7f;
+            }
+        }
+    }
+    .down {
+        position: relative;
+        background-color: #434343;
+        height: 84px;
+        width: 98%;
+        margin-left: 2%;
+        .down-container {
+            height: 84px;
+            width: 98%;
+            padding: 10px;
+            .pull-left {
+                
+                img {
+                    width: 64px;
+                    height: 64px;
+                }
+            }
+            .right {
+                margin-left: 10px;
+                >p {
+                    color: #baaa93;
+                    font-size: 14px;
+                    &:first-child {
+                        padding: 5px 0px;
+                        color: #fff;
+                        font-size: 18px;
+                    }
+                }
+            }
+            .open {
+                a {
+                    width: 70px;
+                    height: 25px;
+                    line-height: 25px;
+                    background-color: #6db110;
+                    position: absolute;
+                    top: 8px;
+                    right: 10px;
+                    color: #fff;
+                    font-size: 14px;
+                    text-align: center;
+                    border-radius: 5px;
+                }
+            }
+        }
+    }
+}

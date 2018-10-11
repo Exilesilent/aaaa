@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./css/login.css">
+    <title>登录</title>
+</head>
+
+<body>
+    <!-- 头部区域 -->
+    <header id="header">
+        <div class="logo">
+            <a href="index.html">
+                <img src="images/header_logo.png" alt="">
+            </a>
+        </div>
+        <div class="app">
+            <a href="#">
+                <img src="images/header_app.png" alt="">
+            </a>
+        </div>
+    </header>
+    <!-- 搜索区域 -->
+    <section id="search">
+        <div class="search">
+            <div class="searchBar">
+                <input type="search" placeholder="请输入你想比价的商品">
+            </div>
+            <div class="searchSub">
+                <input type="submit" value="搜索">
+            </div>
+        </div>
+    </section>
+    <!-- 登录区域 -->
+    <main id="main">
+        <form action="#">
+            <input type="text" name="userName" placeholder="用户名/手机号">
+            <input type="password" name="userPwd">
+            <input type="submit" value="登录">
+            <label><input type="checkbox">一个月内自动登录</label>
+            <span>忘记密码：请电脑登录www.manmanbuy.com找回</span>
+        </form>
+    </main>
+    <!-- 底部区域 -->
+    <footer id="footer">
+        <div class="footnav">
+            <div class="login"><a href="login.html">登录</a></div>
+            <div class="reg"><a href="reg.html">注册</a></div>
+            <div class="toIndex"><a href="#header"><img src="images/ic_jt.png" alt="">返回顶部</a></div>
+        </div>
+        <div class="footer">
+            <div class="text">
+                <a href="#">手机APP下载</a>
+                <a href="#">慢慢买手机版</a>
+                <span>-- 掌上比价平台</span>
+                <p>m.manmanbuy.com</p>
+            </div>
+
+        </div>
+    </footer>
+</body>
+
+</html>

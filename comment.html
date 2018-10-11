@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <title></title>
+    <link rel="stylesheet/less" href="./less/comment.less" />
+    <link rel="stylesheet" href="lib/mui/css/mui.css">
+    <link rel="stylesheet" href="lib/fontAwesome/css/font-awesome.css">
+    <script src="./lib/less/less.js"></script>
+</head>
+
+<body>
+    <!--头部-->
+    <div class="mui-scroll-wrapper">
+        <ul class="mui-scroll">
+            <header id="header" class="clearfix">
+                <a href="" class="logo">
+                    <img src="https://img.alicdn.com/imgextra/i1/690311/TB2cMR0aQUmBKNjSZFOXXab2XXa_!!690311.png" alt="" />
+                </a>
+                <a href="" class="app">
+                    <img src="https://img.alicdn.com/imgextra/i2/690311/TB2beKvaTXYBeNkHFrdXXciuVXa_!!690311.png" alt="" />
+                </a>
+            </header>
+            <!--搜索栏-->
+            <section id="search">
+                <form action="">
+                    <input type="search" placeholder="请输入你想要的比价商品" />
+                    <a href="javascript:void(0);" class="searchbtn">搜索</a>
+                    <a>
+                        <i class="fa fa-times" style='display:none'></i>
+                    </a>
+                </form>
+            </section>
+            <section id="nav">
+                <a href="index.html">首页</a>
+                >
+                <a href="brandList.html">品牌大全</a>
+                >
+                <a href="#">评论</a>
+            </section>
+            <section id="content">
+                <div class="comment">
+
+                </div>
+            </section>
+            <section id="myComment">
+                <div class="tit">
+                    我要评价
+                </div>
+                <div class="userName"></div>
+                <div class="comStar">
+                    <div>
+                        <input type="radio" name="star">
+                        <span class="starNum"></span>
+                    </div>
+                    <div>
+                        <input type="radio" name="star">
+                        <span class="starNum"></span>
+                    </div>
+                    <div>
+                        <input type="radio" name="star">
+                        <span class="starNum"></span>
+                    </div>
+                    <div>
+                        <input type="radio" name="star"> 
+                        <span class="starNum"></span>
+                    </div>
+                    <div>
+                        <input type="radio" name="star">
+                        <span class="starNum"></span>
+                    </div>
+
+                </div>
+                <textarea name="txt" id="word" cols="30" rows="10"></textarea>
+                <button>提交评论</button>
+            </section>
+            <section id="footer">
+                <a href="#" class="login">登录</a>
+                <a href="#" class="regitor">注册</a>
+                <a href="#" class="backToTop">
+                    <i class="fa fa-arrow-up"></i>返回顶部</a>
+            </section>
+    </div>
+    </div>
+    <section id="fixFooter">
+        <a href="#" class="icon"></a>
+        <a href="#" class="close">x</a>
+        <h3>慢慢买</h3>
+        <p>全网比价,查历史价格</p>
+        <button>立即打开</button>
+    </section>
+    <script type="text/html" id="tl1">
+        {{each result value key}}
+        <li>
+            <a href="brandRank.html?brandTitleId={{value.brandTitleId}}&categoryId={{value.categoryId}}&name={{cateName[key]}}">{{value.brandTitle}}
+                <i class="fa fa-chevron-down"></i>
+            </a>
+        </li>
+        {{/each}}
+    </script>
+    <script src="lib/artTemplate/template-web.js"></script>
+    <script src="lib/mui/js/mui.js"></script>
+    <script src="lib/zepto/zepto.min.js"></script>
+    <script src="js/brandBase.js"></script>
+    <script src="js/comment.js"></script>
+</body>
+
+</html>

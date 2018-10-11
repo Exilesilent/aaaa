@@ -1,0 +1,32 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd" >
+<!--
+2013-9-30: Created.
+-->
+<svg>
+<metadata>
+Created by iconfont
+</metadata>
+<defs>
+
+<font id="iconfont" horiz-adv-x="1024" >
+  <font-face
+    font-family="iconfont"
+    font-weight="500"
+    font-stretch="normal"
+    units-per-em="1024"
+    ascent="896"
+    descent="-128"
+  />
+    <missing-glyph />
+    
+    <glyph glyph-name="41" unicode="&#58923;" d="M652.519 646.204c-134.397 134.395-352.323 134.395-486.721 0-134.397-134.41-134.397-352.332 0-486.727 130.861-130.858 340.852-134.249 475.878-10.316L937.84-147 959-125.841 662.835 170.334C786.784 305.343 783.379 515.345 652.519 646.204zM631.358 180.637c-122.517-122.515-321.884-122.515-444.4 0-122.517 122.514-122.517 321.878 0 444.393 122.517 122.529 321.884 122.529 444.4 0C753.875 502.515 753.875 303.151 631.358 180.637z"  horiz-adv-x="1024" />
+
+    
+    <glyph glyph-name="xiangshangjiantou" unicode="&#58927;" d="M771.512499 381.709841 511.614214 831.867354 251.715929 381.709841 414.441057 381.709841 414.441057-63.653483 608.786347-63.653483 608.786347 381.709841Z"  horiz-adv-x="1024" />
+
+    
+
+
+  </font>
+</defs></svg>

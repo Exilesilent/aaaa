@@ -1,0 +1,50 @@
+@import 'brandBase.less';
+#nav{
+    height: 38px;
+    line-height: 38px;
+    border-top: 1px solid @border-color;
+    border-bottom: 1px solid @border-color; 
+    background:linear-gradient(to bottom, #fff,#ccc);   
+    padding-left: 10px;
+    a{
+        color: @a-color;
+        font-size: 14px;
+    }
+}
+#content{
+    width: 100%;
+    .contentTitle{
+        margin: 10px;
+        border: 1px solid @border-color;
+        height: 42px;
+        padding-left: 10px;
+        line-height: 42px;
+        color: #874604;
+        font-size: 14px;
+    }
+    .brandList{
+        
+        width: 100%;
+        li{
+             margin-left: 10px;
+            margin-right: 10px;
+            a{
+                display: block; 
+                width: 100%;
+                color: #000000;
+                font-weight: bold;
+                border-bottom: 1px solid @border-color;
+                height: 41px;
+                line-height: 41px;
+                position: relative;
+                i{
+                    position: absolute;
+                    right: 10px;
+                    top: 10px;
+                    font-size: 16px;
+                    color: @border-color;
+                }
+            }
+        }
+    }
+}

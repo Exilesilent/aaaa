@@ -1,0 +1,67 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+input {
+  border: none;
+  outline: none;
+}
+body {
+  background-color: #efefef;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+  color: #333333;
+}
+ul,
+li {
+  list-style: none;
+}
+img {
+  border: none;
+  vertical-align: center;
+}
+.clearfix:after {
+  content: ' ';
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+html {
+  font-size: 100px;
+}
+body {
+  font-size: 16px;
+}
+.border-top {
+  border-top: 1px solid #cccccc;
+}
+.border-right {
+  border-right: 1px solid #cccccc;
+}
+.border-bottom {
+  border-bottom: 1px solid #cccccc;
+}
+.border-left {
+  border-left: 1px solid #cccccc;
+}
+#tip {
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  background: #5e4674;
+  width: 100%;
+  /*宽度设置为100%，这样才能使隐藏背景层覆盖原页面*/
+  height: 100%;
+  opacity: 0.7;
+  /*非IE浏览器下设置透明度为60%*/
+  z-Index: 999;
+}
+#tip img {
+  width: 100%;
+  position: absolute;
+  margin-top: 150px;
+}

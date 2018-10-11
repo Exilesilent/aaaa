@@ -1,0 +1,309 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+input {
+  border: none;
+  outline: none;
+}
+body {
+  background-color: #efefef;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+  color: #333333;
+}
+ul,
+li {
+  list-style: none;
+}
+img {
+  border: none;
+  vertical-align: center;
+}
+.clearfix:after {
+  content: ' ';
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+html {
+  font-size: 100px;
+}
+body {
+  font-size: 0.16rem;
+}
+.border-top {
+  border-top: 0.01rem solid #cccccc;
+}
+.border-right {
+  border-right: 0.01rem solid #cccccc;
+}
+.border-bottom {
+  border-bottom: 0.01rem solid #cccccc;
+}
+.border-left {
+  border-left: 0.01rem solid #cccccc;
+}
+#tip {
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  background: #5e4674;
+  width: 100%;
+  /*宽度设置为100%，这样才能使隐藏背景层覆盖原页面*/
+  height: 100%;
+  opacity: 0.7;
+  /*非IE浏览器下设置透明度为60%*/
+  z-Index: 999;
+}
+#tip img {
+  width: 100%;
+  position: absolute;
+  margin-top: 1.5rem;
+}
+#header {
+  height: 0.5rem;
+  border-bottom: 0.01rem solid #e6e6e6;
+  background-color: #ff841d;
+}
+#header > h1 img {
+  width: 1.85rem;
+  height: 0.25rem;
+  margin-left: 0.17rem;
+  padding-top: 0.12rem;
+  float: left;
+}
+#header > a img {
+  width: 0.37rem;
+  height: 0.37rem;
+  float: right;
+  margin: 0.07rem 0.07rem 0 0;
+}
+#search {
+  height: 0.3rem;
+  padding: 0.1rem;
+  border-bottom: 0.01rem solid #e6e6e6;
+  position: relative;
+  background-color: #fff;
+}
+#search .txt {
+  width: 85%;
+  height: 0.3rem;
+  border-radius: 0.15rem;
+  background-color: #f1f1f1;
+  font-size: 0.16rem;
+  padding-left: 5%;
+}
+#search .search {
+  width: 0.63rem;
+  height: 0.3rem;
+  color: #fff;
+  font-size: 0.16rem;
+  background-color: #ff841d;
+  border-radius: 0.15rem;
+  position: absolute;
+  top: 0.1rem;
+  right: 0.1rem;
+  line-height: 0.3rem;
+}
+#main {
+  background-color: #fff;
+}
+#main .nav {
+  border-top: 0.01rem solid #e6e6e6;
+  border-bottom: 0.01rem solid #e6e6e6;
+}
+#main .nav ul {
+  padding: 0 0.08rem;
+  display: flex;
+}
+#main .nav ul li {
+  flex: 1;
+  height: 0.4rem;
+}
+#main .nav ul li a {
+  display: block;
+  line-height: 0.4rem;
+  text-align: center;
+}
+#main .nav ul li a.active {
+  color: #ed0000;
+}
+#main .list ul li {
+  padding: 0.1rem 0.08rem;
+}
+#main .list ul li a {
+  display: flex;
+}
+#main .list ul li a .pic {
+  width: 1.2rem;
+  margin-right: 0.1rem;
+}
+#main .list ul li a .pic img {
+  width: 100%;
+}
+#main .list ul li a .intro {
+  flex: 1;
+}
+#main .list ul li a .intro .tit {
+  color: #333333;
+  word-break: break-all;
+  font-size: 0.15rem;
+  line-height: 0.28rem;
+  height: 0.56rem;
+  overflow: hidden;
+}
+#main .list ul li a .intro .price {
+  color: red;
+  font-family: "Helvetica Neue", Helvetica, STHeiTi, sans-serif !important;
+  font-weight: 600;
+  font-size: 0.18rem;
+  margin: 0.05rem 0;
+}
+#main .list ul li a .intro .price span {
+  font-size: 0.12rem;
+}
+#main .list ul li a .intro .detail {
+  color: #a1a1a1;
+  font-size: 0.12rem;
+  line-height: 0.21rem;
+  display: flex;
+  justify-content: space-between;
+}
+#main .toPage {
+  padding: 0.25rem;
+  background-color: #f2f2f2;
+  display: flex;
+  justify-content: space-between;
+}
+#main .toPage a {
+  padding: 0.08rem 0.2rem;
+  background: #d4d4d4;
+  box-shadow: 0 0 0.01rem #666;
+  border-bottom: 0.01rem solid #bababa;
+  border-radius: 0.05rem;
+  background-image: linear-gradient(to bottom, #ededed, #d4d4d4);
+}
+#main .toPage select {
+  width: 0.95rem;
+  padding-left: 0.15rem;
+  border: 0.01rem solid #bababa;
+}
+#link {
+  line-height: 0.24rem;
+  text-align: left;
+  padding-left: 0.1rem;
+}
+#link a {
+  font-size: 0.12rem;
+  color: #5a5a5a;
+}
+#low {
+  height: 0.34rem;
+  margin-top: 0.25rem;
+  border-top: 0.01rem solid #c4c4c4;
+  border-bottom: 0.01rem solid #c4c4c4;
+  display: flex;
+}
+#low a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #5a5a5a;
+  box-sizing: border-box;
+  font-size: 0.14rem;
+}
+#low a img {
+  width: 0.15rem;
+  height: 0.15rem;
+}
+#low a:first-child {
+  border-right: 0.01rem solid #c4c4c4;
+  flex: 4;
+}
+#low a:nth-child(2) {
+  border-right: 0.01rem solid #c4c4c4;
+  flex: 4;
+}
+#low a:nth-child(3) {
+  flex: 6;
+}
+#foot {
+  height: 0.3rem;
+  padding: 0.15rem 0;
+  color: #666;
+  font-size: 0.12rem;
+  text-align: center;
+}
+#foot a:first-child {
+  color: red;
+}
+#foot a:last-child {
+  color: #666;
+}
+#sel {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0px;
+  left: 0px;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+#sel .sel-left {
+  width: 80%;
+  float: left;
+  background-color: #fff;
+}
+#sel .sel-left .head {
+  text-align: center;
+  font-size: 0.18rem;
+  height: 0.44rem;
+  line-height: 0.44rem;
+  position: relative;
+  background-color: #eee;
+}
+#sel .sel-left .head i {
+  position: absolute;
+  right: 0.1rem;
+  top: 0.02rem;
+  font-size: 0.2rem;
+  color: #ff5000;
+}
+#sel .sel-left .row {
+  padding: 0 0.12rem;
+}
+#sel .sel-left .row .row-head {
+  height: 0.29rem;
+  padding: 0.1rem 0;
+  font-size: 0.14rem;
+  line-height: 0.29rem;
+  position: relative;
+}
+#sel .sel-left .row .row-head > span {
+  display: inline-block;
+  font-size: 0.12rem;
+  line-height: 0.08rem;
+  color: #ff5000;
+  margin-left: 0.08rem;
+}
+#sel .sel-left .row .row-head i {
+  position: absolute;
+  right: 0px;
+}
+#sel .sel-left .row .row-body li {
+  float: left;
+  width: 30%;
+  background: #f2f2f2;
+  height: 0.28rem;
+  border-radius: 0.08rem;
+  margin: 0 2% 0.1rem 0;
+  color: #000;
+  text-align: center;
+  line-height: 0.28rem;
+  font-size: 0.12rem;
+}

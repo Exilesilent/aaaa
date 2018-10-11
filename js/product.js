@@ -1,0 +1,11 @@
+$(function(){
+    $.ajax({
+        url:"http://localhost:9090/api/getproduct",
+        ytpe:'get',
+        data:'productid=40',
+        dataType:'json',
+        success:function(data){
+            console.log(data);
+        }
+    })
+});

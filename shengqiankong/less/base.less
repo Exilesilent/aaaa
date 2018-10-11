@@ -1,0 +1,290 @@
+@border-color: #ddd;
+@font-color:#ff6c00;
+body,
+div,
+span,
+p,
+ul,
+li,
+input,
+a,
+img,
+strong,
+i,
+del,
+em,
+h1,
+h2,
+h3,
+h4 {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+input {
+    border: 0 none;
+    outline: 0 none;
+}
+
+img {
+    border: 0 none;
+    vertical-align: middle;
+}
+
+li {
+    list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    font-weight: normal;
+}
+
+i {
+    font-style: normal;
+}
+
+body {
+    font: 14px/100% "微软雅黑";
+    background-color: #fff;
+}
+
+.w {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.clearfix::after {
+    content: ".";
+    clear: both;
+    display: block;
+    visibility: hidden;
+    /* 元素的可见性 */
+}
+
+.clear fix {
+    *zoom: 1;
+}
+
+
+body{
+    padding-top: 85px;
+    background-color: #f2f2f2;
+}
+/* 头部区域开始 */
+
+#header {
+    width: 100%;
+    background-color: #fff;
+    height: 85px;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    .headertop {
+
+        .top {
+            border-bottom: 1px solid @border-color;
+            height: 25px;
+            padding: 9px 10px;
+            display: flex;
+            .logo {
+                flex: 27;
+                margin-top: 2px;
+                a {
+                    width: 100%;
+                    img {
+                        max-width: 100%;
+                        max-height: 24px;
+                    }
+                }
+            }
+            .searchBar {
+                flex: 58;
+                width: 58%;
+                height: 30px;
+                margin-top: -2px;
+                background-color: #f0f0f0;
+                border-radius: 100px;
+                i {
+                    margin-left: 10px;
+                    margin-right: 2px;
+                    font-size: 14px;
+                }
+                input {
+                    width: 77%;
+                    height: 30px;
+                    text-decoration: none;
+                    background-color: transparent;
+                }
+            }
+            .download {
+                flex: 15;
+                height: 100%;
+                a{
+                    display: block;
+                    float: right;
+                    padding: 0 6px;
+                    border-radius: 20px;
+                    border: 1px solid #f04848;
+                    line-height: 20px;
+                    color: #f04848;
+                    font-size: 12px;
+                }
+            }
+        }
+        .tab{
+            width: 100%;
+            height: 40px;
+            border-bottom: 1px solid #e0e4e7;
+            box-sizing: border-box;
+            .nav{
+                overflow: auto;
+                .navbar{
+                    width: 550px;
+                    li{
+                        display: block;
+                        height: 40px;
+                        line-height: 40px;
+                        float: left;
+                        padding: 0 12px;
+                        box-sizing: border-box;
+                        position: relative;
+                        a{
+                            color: #333;
+                            font-size: 15px;
+                            font-weight: bold;
+                        }
+                        &.active{
+                            
+                            &::before{
+                                position: absolute;
+                                content: '';
+                                width: 25px;
+                                height: 4px;
+                                left: 50%;
+                                transform: translateX(-50%);
+                                bottom: 0;
+                                background-color: #f85000;
+
+                            }
+                            a{
+                                color: #f85000;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* 底部区域 */
+#footer{
+    width: 100%;
+    background-color: #efefef;
+    padding-top: 20px;
+    .top{
+        width: 100%;
+        height: 36px;
+        /* background-image: linear-gradient(to right,#ffae44,#ff9205); */
+        border-bottom: solid 1px #ffc881;
+        background: -webkit-gradient(linear,0 0,0 100%,from(#ffaf47),to(#ff9000));
+        line-height: 36px;
+        span{
+            font-size: 18px;
+            margin-left: 10px;
+            color: #fff;
+            font-weight: bold;
+        }
+        img{
+            width: 20px;
+            height: 20px;
+            float: right;
+            margin-top: 8px;
+            margin-right: 11px;
+        }
+    }
+    .footnav{
+        display: flex;
+        width: 100%;
+        height: 34px;
+        border-top: 1px solid #c4c4c4;
+        border-bottom: 1px solid #c4c4c4;
+        margin-top: 10px;
+        .login{
+            flex:1;
+            width: 30%;
+            height: 100%;
+            text-align: center;
+            font-size: 14px;
+            line-height: 34px; 
+            a{
+                display: block;
+                width: 100%;
+                height: 100%;
+            }  
+        }
+        .reg{
+            flex:1;
+            width: 30%;
+            height: 100%;
+            text-align: center;
+            font-size: 14px;
+            line-height: 34px;  
+            border-left: 1px solid #c4c4c4;
+            border-right: 1px solid #c4c4c4; 
+            a{
+                display: block;
+                width: 100%;
+                height: 100%;
+            }
+        }
+        .toIndex{
+            flex:1;
+            width: 40%;
+            height: 100%;
+            text-align: center;
+            font-size: 14px;
+            line-height: 34px;  
+            a{
+                display: block;
+                width: 100%;
+                height: 100%;
+                i{
+                    color: #000;
+                }
+                img{
+                    margin-top: -3px;
+                }
+            }
+        }
+    }
+    .footer{
+        width: 100%;
+        height: 60px;
+        background-color: #f2f2f2;
+        .text{
+            width: 100%;
+            text-align: center;
+            margin-top: 10px;
+            a,span{
+                font-size: 12px;
+                color: #5a5a5a;
+            }
+            &a:first-child{
+                color: #ff0000;
+            }
+            p{
+                font-size: 13px;
+                color: #5a5a5a;
+            }
+        }
+    }
+} 

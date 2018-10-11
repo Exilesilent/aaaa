@@ -1,0 +1,110 @@
+@import "brandBase.less";
+#nav{
+    height: 38px;
+    line-height: 38px;
+    border-top: 1px solid @border-color;
+    border-bottom: 1px solid @border-color; 
+    background:linear-gradient(to bottom, #fff,#ccc);   
+    padding-left: 10px;
+    a{
+        color: @a-color;
+        font-size: 14px;    
+    }
+}
+.comment{
+    // background-color: ;
+    .userInfo{
+        padding: 10px;
+        .name{
+            color: red;
+        }
+        .product{
+            display: block;
+            color: rgba(255, 145, 0, 0.932);
+            margin-top: 10px;
+        }
+        em{
+            font-style: normal;
+            margin-left: 5px;
+        }
+    }
+    .star{
+        margin-left: 10px;
+        height: 20px;
+        width: 100px;
+        background: url(../images/star.svg) 0 0 ;
+        background-size: 20px 20px;
+    }
+    .inner{
+        padding: 10px;
+    }
+    .time{
+        padding: 10px;
+    }
+}
+#myComment{
+    .tit{
+        height: 40px;
+        border-top: 5px solid #000;
+        background-color: #ccc;
+        text-align: center;
+        font-size: 16px;
+        line-height: 40px;
+    }
+    .comStar{
+        display: flex;
+        width: 100%;
+        flex-wrap: wrap;
+        padding: 10px;
+        div{
+            width: 33.333%;
+            input{
+                height: 20px;
+                line-height: 20px;
+                margin-left: 5px;
+                margin-top: 2px;
+                float: left;
+            }
+            .starNum{
+                float: left;
+                // margin-left: 10px;
+                height: 20px;
+                width: 100px;
+                background: url(../images/star.svg) 0 0 ;
+                background-size: 20px 20px;
+            }
+            &:nth-of-type(2){
+                .starNum{
+                    width: 80px;
+                }
+            }
+            &:nth-of-type(3){
+                .starNum{
+                    width: 60px;
+                }
+            }
+            &:nth-of-type(4){
+                .starNum{
+                    width: 40px;
+                }
+            }
+            &:nth-of-type(5){
+                .starNum{
+                    width: 20px;
+                }
+            }
+        }
+
+    }
+    #word{
+        display: block;
+        width: 350px;
+        margin: 0 auto;
+    }
+    button{
+        display: block;
+        width: 350px;
+        margin: 10px auto 0;
+        background: linear-gradient(to bottom,#fff,#ccc);
+    }
+}

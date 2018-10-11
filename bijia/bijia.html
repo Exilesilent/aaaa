@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <!-- 导入less文件 -->
+    <!-- <link rel="stylesheet/less" href="less/bijia.less"> -->
+    <!-- 导入less.js文件 -->
+    <!-- <script src="lib/less/less.js"></script> -->
+    <!-- 导入bijia.css文件 -->
+    <link rel="stylesheet" href="css/bijia.css">
+    <!-- 屏幕改变事件 -->
+    <script>
+        window.onresize=function(){
+            if(document.body.offsetWidth<400){
+                //判断根元素的字体大小为现在屏幕宽度除3.75
+            document.querySelector('html').style.fontSize=document.body.offsetWidth/3.75+'px';
+            // console.log(document.body.offsetWidth/3.75);
+            }else{
+                document.querySelector('html').style.fontSize='100px';
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <!-- 顶部 -->
+    <header id="header">
+        <h1><a href="../index.html"><img src="img/logo.png" alt=""></a></h1>
+        <a href="#"><img src="img/load.png" alt=""></a>
+    </header>
+    <!-- 搜索 -->
+    <div id="search">
+        <input type="text" placeholder="请输入你想比价的商品" class="txt">
+        <input type="button" value="搜索" class="search">
+    </div>
+
+    <!-- 主体 -->
+    <main id="main">
+        <div class="container">
+            <a href="#">大家电</a>
+            <ul>
+                <li><a href="#">平板电视</a></li>
+                <li><a href="#">空调</a></li>
+                <li><a href="#">家庭影院</a></li>
+                <li><a href="#">冰箱</a></li>
+                <li><a href="#">DVD高清</a></li>
+                <li><a href="#">音响/音箱</a></li>
+                <li><a href="#">洗衣机</a></li>
+                <li><a href="#">热水器</a></li>
+                <li><a href="#">酒柜/冰吧/冰柜</a></li>
+                <li><a href="#">消毒柜</a></li>
+            </ul>
+            <a href="#">大家电</a>
+            <ul>
+                <li><a href="#">平板电视</a></li>
+                <li><a href="#">空调</a></li>
+                <li><a href="#">家庭影院</a></li>
+                <li><a href="#">冰箱</a></li>
+                <li><a href="#">DVD高清</a></li>
+                <li><a href="#">音响/音箱</a></li>
+                <li><a href="#">洗衣机</a></li>
+                <li><a href="#">热水器</a></li>
+                <li><a href="#">酒柜/冰吧/冰柜</a></li>
+                <li><a href="#">消毒柜</a></li>
+            </ul>
+        </div>
+        
+    </main>
+
+    <!-- 底部 -->
+    <div id="low">
+        <a href="../login.html">登录</a>
+        <a href="../reg.html">注册</a>
+        <a href="#"><img src="img/up.jpg">返回顶部</a>
+    </div>
+    <!-- 尾部 -->
+    <footer id="foot">
+        <p>
+            <a href="#">手机APP下载</a>
+            <a href="#">慢慢买手机版</a>
+            --掌上比价平台
+        </p>
+        <p>m.manmanbuy.com</p>
+    </footer>
+    <!-- 搜索弹出提示框 -->
+    <div id="tip" style="display: none">
+        <img src="img/tip.gif" alt="">
+    </div>
+
+
+
+
+    <!-- 导入模板引擎 -->
+    <script src="lib/artTemplate/template-web.js"></script>
+    <!-- 设置模板 -->
+    <script type="text/html" id="getcategorytitle"> 
+        {{ each list value }}
+        <a href="#">{{ value.title }}</a>
+            <ul>
+                {{if(value.result.length%3==0)}}
+                {{ each value.result value}}
+                <li><a href="liebiao.html?categoryid={{ value.categoryId }}">{{ value.category }}</a></li>
+                {{ /each }}
+                {{else if(value.result.length%3==1)}}
+                {{ each value.result value}}
+                <li><a href="liebiao.html?categoryid={{ value.categoryId }}">{{ value.category }}</a></li>
+                {{ /each }}
+                <li></li>
+                <li></li>
+                {{else if(value.result.length%3==2)}}
+                {{ each value.result value}}
+                <li><a href="liebiao.html?categoryid={{ value.categoryId }}">{{ value.category }}</a></li>
+                {{ /each }}
+                <li></li>
+                {{/if}}
+            </ul>
+        {{ /each }}    
+    </script>
+    <!-- <script type="text/html" id="title">
+        {{ each list value }}
+        <a href="#">{{ value.title }}</a>
+        {{ /each }}
+    </script>
+    <script type="text/html" id="category">
+        
+            <ul>
+                {{ each list value}}
+                <li><a href="#">{{ value.category }}</a></li>
+                {{ /each }}
+            </ul>
+    </script> -->
+    <script src="lib/zepto/zepto.min.js"></script>
+    <!-- js文件 -->
+    <script src="js/bijia.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
+    <title></title>
+    <link rel="stylesheet/less" href="./less/brandList.less" />
+    <link rel="stylesheet" href="lib/mui/css/mui.css">
+    <link rel="stylesheet" href="lib/fontAwesome/css/font-awesome.css">
+    <script src="./lib/less/less.js"></script>
+</head>
+
+<body>
+    <!--头部-->
+    <div class="mui-scroll-wrapper">
+        <div class="mui-scroll">
+            <header id="header" class="clearfix">
+                <a href="index.html" class="logo"><img src="images/header_logo.png"
+                        alt="" /></a>
+                <a href="" class="app"><img src="images/header_app.png"
+                        alt="" /></a>
+            </header>
+            <!--搜索栏-->
+            <section id="search">
+                <form action="">
+                    <input type="search" placeholder="请输入你想要的比价商品" />
+                    <a href="javascript:void(0);" class="searchbtn">搜索</a>
+                    <a><i class="fa fa-times" style='display:none'></i></a>
+                </form>
+            </section>
+            <section id="nav">
+                <a href="index.html">首页</a>
+                >
+                <a href="brandList.html">品牌大全</a>
+            </section>
+            <section id="content">
+                <div class="contentTitle">热门品牌排行</div>
+                <div class="brandList">
+                    <ul class="brandUl">
+                        <li><a href="#">平板电脑十大品牌<i class="fa fa-chevron-down"></i></a></li>
+                    </ul>
+                </div>
+            </section>
+            <section id="footer">
+                <a href="login.html" class="login">登录</a>
+                <a href="reg.html" class="regitor">注册</a>
+                <a href="#" class="backToTop"><i class="fa fa-arrow-up"></i>返回顶部</a>
+            </section>
+        </div>
+    </div>
+    <section id="fixFooter">
+        <a href="#" class="icon"></a>
+        <a href="#" class="close">x</a>
+        <h3>慢慢买</h3>
+        <p>全网比价,查历史价格</p>
+        <button>立即打开</button>
+    </section>
+    <script type="text/html" id="tl1">
+        {{each result value key}}
+    <li><a href="brandRank.html?brandTitleId={{value.brandTitleId}}&categoryId={{value.categoryId}}&name={{cateName[key]}}">{{value.brandTitle}}<i class="fa fa-chevron-down"></i></a></li>
+    {{/each}}
+</script>
+    <script src="lib/artTemplate/template-web.js"></script>
+    <script src="lib/mui/js/mui.js"></script>
+    <script src="lib/zepto/zepto.min.js"></script>
+    <script src="js/brandBase.js"></script>
+    <script src="js/brandList.js"></script>
+
+</body>
+
+</html>

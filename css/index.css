@@ -1,0 +1,353 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: #666;
+}
+
+input {
+    border: 0 none;
+    outline: 0 none;
+}
+img{
+    border: 0 none;
+    vertical-align: middle;
+}
+li{
+    list-style: none;
+}
+html{
+    font-size: 100px;
+}
+body{
+    font-size: 16px;
+}
+/* 头部区域 */
+#header {
+    width: 100%;
+    height: 0.51rem;
+    background-color: #ff841d;
+}
+
+#header .logo {
+    float: left;
+}
+
+#header .logo a {
+    display: block;
+    width: 1.85rem;
+    height: 0.25rem;
+    margin-top: 0.13rem;
+    margin-left: 0.2rem;
+}
+
+#header .logo a>img {
+    width: 100%;
+    height: 100%;
+}
+
+#header .app {
+    float: right;
+    padding-top: 0.09rem;
+    margin-right: 0.2rem;
+}
+
+#header .app img {
+    width: 0.34rem;
+    height: 0.34rem;
+}
+
+/* 搜索区域 */
+
+#search {
+    width: 100%;
+    height: 0.51rem;
+    background-color: #fff;
+    border-bottom: 0.01rem solid #e6e6e6;
+}
+
+#search .search {
+    width: 100%;
+    width: 100%;
+}
+
+#search .searchBar {
+    float: left;
+    width: 89%;
+    height: 0.31rem;
+}
+
+#search .searchBar input {
+    width: 100%;
+    height: 100%;
+    margin-top: 0.1rem;
+    margin-left: 0.11rem;
+    background-color: #f1f1f1;
+    border-radius: 0.15rem;
+    padding-left: 0.3rem;
+    font-size: 0.16rem;
+}
+
+#search .searchSub {
+    float: right;
+    margin-top: 0.11rem;
+    position: absolute;
+    right: 0.11rem;
+}
+
+#search .searchSub input {
+
+    width: 0.63rem;
+    height: 0.3rem;
+    background-color: #ff841d;
+    border-radius: 0.15rem;
+    font-size: 0.16rem;
+    line-height: 0.3rem;
+    text-align: center;
+    color: #fff;
+}
+
+/* 导航区域 */
+#nav {
+    width: 100%;
+    height: 2.01rem;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#nav div {
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+#nav div a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#nav div a img {
+    width: 0.5rem;
+    height: 0.5rem;
+}
+
+#nav div a span {
+    margin-top: 0.1rem;
+    font-size: 0.14rem;
+}
+
+/* 商品区域 */
+#products{
+    width: 100%;
+    background-color: #efefef;
+    padding-top: 0.01rem;
+}
+#products .top{
+    width: 100%;
+    height: 0.36rem;
+    /* background-image: linear-gradient(to right,#ffae44,#ff9205); */
+    border-bottom: solid 0.01rem #ffc881;
+    background: -webkit-gradient(linear,0 0,0 100%,from(#ffaf47),to(#ff9000));
+    margin-top: 0.05rem;
+    line-height: 0.36rem;
+}
+#products .top span{
+    font-size: 0.18rem;
+    margin-left: 0.1rem;
+    color: #fff;
+    font-weight: bold;
+}
+
+#products .top img{
+    width: 0.2rem;
+    height: 0.2rem;
+    float: right;
+    margin-top: 0.08rem;
+    margin-right: 0.11rem;
+}
+
+#products .shop{
+    width: 100%;
+    margin-bottom: 0.1rem;
+}
+#products .shop .pic{
+    margin: 0 auto;
+    max-width: 9.6rem;
+    height: 1.29rem;
+    background-color: #fff;
+    border-bottom: 0.01rem solid #e6e6e6;
+    position: relative;
+}
+#products .shop .pic a{
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+#products .shop .pic img{
+    width: 1rem;
+    height: 1rem;
+    margin:0.15rem 0.1rem 0px 0.08rem;
+    float: left;
+}
+#products .shop .pic .titel{
+    font-size: 0.14rem;
+    color: #333;
+    padding-right: 0.1rem;
+    padding-top: 0.15rem;
+}
+#products .shop .pic .titel span{
+    font-size: 0.14rem;
+    color: #ff6c00;
+}
+#products .shop .pic span.mall{
+    color: #a1a1a1;
+    font-size: 0.12rem;
+    float: left;
+    position: absolute;
+    bottom: 0.2rem;
+}
+#products .shop .pic span.comment{
+    margin-top: 0.5rem;
+    color: #a1a1a1;
+    font-size: 0.13rem;
+    position: absolute;
+    bottom: 0.2rem;
+    right: 0.1rem;
+}
+#products .shop .pic span.comment img{
+    float: left;
+    width: 0.2rem;
+    height: 0.2rem;
+    margin-top:0px;
+    margin-right: 0px;
+}
+
+#products .more{
+    width: 95%;
+    height: 0.32rem;
+    background-color: #fff;
+    margin: 0 auto;
+    border-radius: 0.05rem;
+    border: 0.01rem solid #e6e6e6;
+    font-size: 0.14rem;
+    color: #5a5a5a;
+    line-height: 0.32rem;
+    text-align: center;
+}
+#products .more a{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+/* 底部区域 */
+#footer{
+    width: 100%;
+    background-color: #efefef;
+    padding-top: 0.2rem;
+}
+#footer .top{
+    width: 100%;
+    height: 0.36rem;
+    /* background-image: linear-gradient(to right,#ffae44,#ff9205); */
+    border-bottom: solid 0.01rem #ffc881;
+    background: -webkit-gradient(linear,0 0,0 100%,from(#ffaf47),to(#ff9000));
+    line-height: 0.36rem;
+}
+#footer .top span{
+    font-size: 0.18rem;
+    margin-left: 0.1rem;
+    color: #fff;
+    font-weight: bold;
+}
+#footer .top img{
+    width: 0.2rem;
+    height: 0.2rem;
+    float: right;
+    margin-top: 0.08rem;
+    margin-right: 0.11rem;
+}
+#footer .footnav{
+    width: 100%;
+    height: 0.34rem;
+    border-top: 0.01rem solid #c4c4c4;
+    border-bottom: 0.01rem solid #c4c4c4;
+    margin-top: 0.1rem;
+}
+#footer .footnav .login{
+    float: left;
+    width: 30%;
+    height: 100%;
+    text-align: center;
+    font-size: 0.14rem;
+    line-height: 0.34rem;   
+}
+#footer .footnav .login a{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+#footer .footnav .reg{
+    float: left;
+    width: 30%;
+    height: 100%;
+    text-align: center;
+    font-size: 0.14rem;
+    line-height: 0.34rem;  
+    border-left: 0.01rem solid #c4c4c4;
+    border-right: 0.01rem solid #c4c4c4; 
+}
+#footer .footnav .reg a{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+#footer .footnav .toIndex{
+    float: left;
+    width: 40%;
+    height: 100%;
+    text-align: center;
+    font-size: 0.14rem;
+    line-height: 0.34rem;  
+}
+#footer .footnav .toIndex a{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+#footer .footnav .toIndex img{
+    margin-top: -0.03rem;
+}
+#footer .footer{
+    width: 100%;
+    height: 0.6rem;
+    background-color: #f2f2f2;
+}
+#footer .footer .text{
+    width: 100%;
+    text-align: center;
+    margin-top: 0.1rem;
+}
+#footer .footer a,span{
+    font-size: 0.12rem;
+    color: #5a5a5a;
+}
+#footer .footer a:first-child{
+    color: #ff0000;
+}
+#footer .footer .text p{
+    font-size: 0.13rem;
+    color: #5a5a5a;
+}

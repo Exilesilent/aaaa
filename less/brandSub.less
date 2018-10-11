@@ -1,0 +1,121 @@
+@import 'brandBase.less';
+#nav{
+    height: 38px;
+    line-height: 38px;
+    border-top: 1px solid @border-color;
+    border-bottom: 1px solid @border-color; 
+    background:linear-gradient(to bottom, #fff,#ccc);   
+    padding-left: 10px;
+    a{
+        color: @a-color;
+        font-size: 14px;    
+    }
+}
+#content{
+    .contentRank{
+        display: flex;
+        border-top: 1px solid @border-color;
+        border-bottom: 1px solid @border-color;        
+        background-color: #fff;  
+        font-size: 14px;      
+        a{
+            &.active{
+                color: red;
+            }
+            flex:1;
+            height: 40px;
+            line-height: 40px;
+            color:@a-color;
+            text-align: center;
+            border-right: 1px solid @border-color;
+            &:last-child{
+                border-right:none;
+            }
+            i{
+                
+                font-size: 14px;
+                line-height: 40px;
+                padding: 0 5px 5px 5px;
+            }
+        }
+    }
+    .contentList{
+        background-color: #fff;
+        a{
+            border-bottom: 1px solid #ccc;
+            padding: 10px;
+            display: flex;
+            .pic{
+                width: 120px;
+                height: 120px;
+                margin-right: 10px;
+                img{
+                    width: 120px;
+                    height: 120px;
+                }
+            }
+            .right{
+                flex: 1;
+                color: #000;
+                margin-right: 10px;
+                .title{
+                    overflow: hidden;
+                    -webkit-line-clamp: 2;
+                    display: -webkit-box;
+                    text-overflow: ellipsis;
+                    font-size: 15px;
+                    line-height: 28px;
+                    height: 56px;
+                    -webkit-box-orient: vertical;
+                    word-break: break-all;
+                }
+                .price{
+                    color:red;
+                    margin-top: 10px;
+                }
+                .other{
+                    font-size: 12px;
+                    color:@a-color;
+                    margin-top: 10px;
+                    .shop{
+                        float: left;
+                    }
+                    .comment{
+                        float: right;
+                    }
+                }
+            }
+
+        }
+    }
+}
+#pagebtn{
+    width: 100%;
+    position: relative;
+    .prePage{
+        position: absolute;
+        left: 20px;
+        top: 0px;
+    }
+    .nextPage{
+        position: absolute;
+        right: 20px;
+        top: 0px;
+    }
+    select{
+        -webkit-appearance:none;
+        width: 100px;
+        height: 30px;
+        padding: 0;
+        line-height: 12px;
+        text-align: center;
+        margin: 0 auto;
+        display: block;
+        margin-top: 20px;
+        border-radius: 5px;
+        padding-left: 20px;
+        // border: 1px solid #ccc;
+
+    }
+
+}

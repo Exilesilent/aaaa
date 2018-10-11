@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <!-- 导入less文件 -->
+    <!-- <link rel="stylesheet/less" href="less/liebiao.less"> -->
+    <!-- 导入less.js文件 -->
+    <!-- <script src="lib/less/less.js"></script> -->
+    <!-- 导入 liebiao.css文件 -->
+    <link rel="stylesheet" href="css/liebiao.css">
+    <!-- 导入字体图标css文件 -->
+    <link rel="stylesheet" href="fonts/font_sn1q6atlg2m/iconfont.css">
+    <!-- 导入mui.css文件 -->
+    <!-- <link rel="stylesheet" href="lib/mui/css/mui.min.css"> -->
+    <!-- 屏幕改变事件 -->
+    <script>
+        window.onresize=function(){
+                if(document.body.offsetWidth<400){
+                    //判断根元素的字体大小为现在屏幕宽度除3.75
+                document.querySelector('html').style.fontSize=document.body.offsetWidth/3.75+'px';
+                // console.log(document.body.offsetWidth/3.75);
+                }else{
+                    document.querySelector('html').style.fontSize='100px';
+                }
+            }
+        </script>
+</head>
+
+<body>
+    <!-- 头部 -->
+    <header id="header">
+        <h1><a href="../index.html"><img src="img/logo.png" alt=""></a></h1>
+        <a href="#"><img src="img/load.png" alt=""></a>
+    </header>
+    <!-- 搜索 -->
+    <div id="search">
+        <input type="text" placeholder="请输入你想比价的商品" class="txt">
+        <input type="button" value="搜索" class="search">
+    </div>
+
+    <!-- 主题 -->
+    <main id="main">
+        <div class="nav">
+            <ul>
+                <li><a href="#" class="active">综合</a></li>
+                <li><a href="#">销量</a></li>
+                <li><a href="#">价格</a></li>
+                <li><a href="#" class="shaixuan">
+                        <i class="iconfont icon-shaixuan"></i>筛选
+                    </a></li>
+            </ul>
+        </div>
+        <div class="list">
+            <ul>
+                <li class="border-bottom"><a href="#">
+                        <div class="pic">
+                            <img src="http://pro.zuyushop.com:8015/ProPic/201512/Thumb/Thumb_2015120015500489027.jpg"
+                                alt="奥林巴斯/OLYMPUS TG-4  1600万像素 数码相机" width="100" height="100">
+                        </div>
+                        <div class="intro">
+                            <div class="tit">海信撒发生是的发生对方的说法手动阀啥打法是否</div>
+                            <div class="price">
+                                <span></span>3099
+                            </div>
+                            <div class="detail">
+                                <span>3商城报价</span>
+                                <span>有3586人评论</span>
+                            </div>
+                        </div>
+                    </a></li>
+            </ul>
+            <ul>
+                <li class="border-bottom"><a href="#">
+                        <div class="pic">
+                            <img src="img/tv.jpg" alt="">
+                        </div>
+                        <div class="intro">
+                            <div class="tit">海信撒发生是的发生对方的说法手动阀啥打法是否</div>
+                            <div class="price">
+                                <span>￥</span>3099
+                            </div>
+                            <div class="detail">
+                                <span>3商城报价</span>
+                                <span>有3586人评论</span>
+                            </div>
+                        </div>
+                    </a></li>
+            </ul>
+            <ul>
+                <li class="border-bottom"><a href="#">
+                        <div class="pic">
+                            <img src="img/tv.jpg" alt="">
+                        </div>
+                        <div class="intro">
+                            <div class="tit">海信撒发生是的发生对方的说法手动阀啥打法是否</div>
+                            <div class="price">
+                                <span>￥</span>3099
+                            </div>
+                            <div class="detail">
+                                <span>3商城报价</span>
+                                <span>有3586人评论</span>
+                            </div>
+                        </div>
+                    </a></li>
+            </ul>
+        </div>
+        <div class="list2" style="display: none">
+
+        </div>
+        <div class="toPage">
+            <a href="javascript:;" class="upPage">
+                上一页
+            </a>
+            <select name="">
+                <option value="1" selected>1</option>
+            </select>
+            <a href="javascript:;" class="downPage">
+                下一页
+            </a>
+        </div>
+    </main>
+    <!-- 链接 -->
+    <div id="link">
+        相关链接:<br>
+        <a href="#">电视机十大品牌</a><br>
+        <a href="#">电视机口碑大全</a>
+    </div>
+    <!-- 底部 -->
+    <div id="low">
+        <a href="../login.html">登录</a>
+        <a href="../reg.html">注册</a>
+        <a href="#"><img src="img/up.jpg">返回顶部</a>
+    </div>
+    <!-- 尾部 -->
+    <footer id="foot">
+        <p>
+            <a href="#">手机APP下载</a>
+            <a href="#">慢慢买手机版</a>
+            --掌上比价平台
+        </p>
+        <p>m.manmanbuy.com</p>
+    </footer>
+    <!-- 搜索弹出提示框 -->
+    <div id="tip" style="display: none">
+        <img src="img/tip.gif" alt="">
+    </div>
+    <!-- 筛选页面 -->
+    <div id="sel" style="display: none">
+        <div class="sel-left">
+            <div class="head">
+                筛 选
+                <i class="iconfont icon-x"></i>
+            </div>
+            <div class="row">
+                <div class="row-head">
+                    品牌<span>全部品牌</span>
+                    <i class="iconfont icon-arrowdown"></i>
+                </div>
+                <div class="row-body">
+                    <ul class="clearfix">
+                        <li style="background-color: #ff5000;color: #fff">全部品牌</li>
+                        <li>海信</li>
+                        <li>夏普</li>
+                        <li>小米</li>
+                        <li>创维</li>
+                        <li>TCL</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row">
+                <div class="row-head">
+                    品牌<span>全部品牌</span>
+                    <i class="iconfont icon-arrowdown"></i>
+                </div>
+                <div class="row-body">
+                    <ul class="clearfix">
+                        <li style="background-color: #ff5000;color: #fff">全部品牌</li>
+                        <li>液晶电视</li>
+                        <li>曲面电视</li>
+                        <li>3D电视</li>
+                        <li>会议/广告机</li>
+                        <li>激光/影院电视</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row">
+                <div class="row-head">
+                    品牌<span>全部品牌</span>
+                    <i class="iconfont icon-arrowdown"></i>
+                </div>
+                <div class="row-body">
+                    <ul class="clearfix">
+                        <li style="background-color: #ff5000;color: #fff">全部品牌</li>
+                        <li>32英寸以下</li>
+                        <li>32英寸</li>
+                        <li>37-39英寸</li>
+                        <li>40-42英寸</li>
+                        <li>43-45英寸</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row">
+                <div class="row-head">
+                    品牌<span>全部品牌</span>
+                    <i class="iconfont icon-arrowdown"></i>
+                </div>
+                <div class="row-body">
+                    <ul class="clearfix">
+                        <li style="background-color: #ff5000;color: #fff">全部品牌</li>
+                        <li>超高清4K</li>
+                        <li>全高清1080P</li>
+                        <li>高清720P</li>
+                        <li>其他</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row">
+                <div class="row-head">
+                    品牌<span>全部品牌</span>
+                    <i class="iconfont icon-arrowdown"></i>
+                </div>
+                <div class="row-body">
+                    <ul class="clearfix">
+                        <li style="background-color: #ff5000;color: #fff">全部品牌</li>
+                        <li>智能网络电视</li>
+                        <li>普通电视</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row">
+                <div class="row-head">
+                    品牌<span>全部品牌</span>
+                    <i class="iconfont icon-arrowdown"></i>
+                </div>
+                <div class="row-body">
+                    <ul class="clearfix">
+                        <li style="background-color: #ff5000;color: #fff">全部品牌</li>
+                        <li>支持3D</li>
+                        <li>不支持3D</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row">
+                <div class="row-head">
+                    品牌<span>全部品牌</span>
+                    <i class="iconfont icon-arrowdown"></i>
+                </div>
+                <div class="row-body">
+                    <ul class="clearfix">
+                        <li style="background-color: #ff5000;color: #fff">全部品牌</li>
+                        <li>4.8分及以下</li>
+                        <li>4.6分及以下</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- <div class="sel-right"></div> -->
+    </div>
+
+    <!-- 导入模板引擎 -->
+    <script src="lib/artTemplate/template-web.js"></script>
+    <!-- 设置模板 -->
+    <script type="text/html" id="productTpl">
+        {{ each list value }}
+        <ul>
+                <li class="border-bottom"><a href="shangpin.html?productid={{value.productId}}&productPrice={{value.productPrice}}">
+                        <div class="pic">
+                                {{@value.productImg}}
+                        </div>
+                        <div class="intro">
+                            <div class="tit">{{ value.productName }}</div>
+                            <div class="price">
+                                <span></span>{{ value.productPrice }}
+                            </div>
+                            <div class="detail">
+                                <span>商城{{ value.productQuote }}</span>
+                                <span>{{ value.productCom }}</span>
+                            </div>
+                        </div>
+                    </a></li>
+            </ul>
+        {{ /each }}
+    </script>
+    <!-- 导入mui.js文件 -->
+    <!-- <script src="lib/mui/js/mui.min.js"></script> -->
+
+    <!-- 导入zepto -->
+    <script src="lib/zepto/zepto.min.js"></script>
+    <!-- 导入js文件 -->
+    <script src="js/liebiao.js"></script>
+
+</body>
+
+</html>

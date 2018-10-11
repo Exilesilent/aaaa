@@ -1,0 +1,183 @@
+﻿@import "basebaicai.less";
+//头部
+#header{
+    height: 44px;
+    width: 100%;
+    background-color: @color;
+    display: flex;
+    padding:8px 15px;
+    line-height: 28px;
+    box-sizing: border-box;
+    >a.fa-angle-left{
+        width: 28px;
+        height: 12px;
+        display: block;
+        font-size: 26px;
+        color: #fff;
+        line-height: 28px;
+    }
+    >p.blurb{
+        flex: 1;
+        color: #fff;
+        font-size: 16px;
+        text-align: center;
+        line-height: 28px;
+        >i{
+            vertical-align: middle;
+            font-size: 22px;
+        }
+    }
+    >a.fa-history{
+        width: 28px;
+        height: 28px;
+        color: #fff;
+        font-size: 20px;
+        display:block;
+        line-height: 28px;
+        text-align: center;
+    }
+    // >form{
+    //     flex: 1;
+    //     position: relative;
+    //     >input{
+    //         width: 100%;
+    //         height: 28px;
+    //         line-height: 28px;
+    //         border-radius: 5px;
+    //         padding: 0px 10px;
+            
+    //     }
+    //     >span{
+    //         position: absolute;
+    //         right: 10px;
+    //         top: 0px;
+    //         color:#666666;
+    
+    //     }
+    // }
+
+}
+// 主体部分
+#main{
+    // 导航栏部分
+    #nav{
+        width: 100%;
+        height: 50px;
+        background-color: #fff;
+        ul{
+            display:flex;
+            >li{
+                flex: 1;
+                height: 50px;
+                line-height: 50px;
+                >a{
+                    display: block;
+                    width: 100%;
+                    height: 100%;
+                    text-align: center;
+                    font-size: 16px;
+                    color: #333;
+                    &.active{
+                        border-bottom: 1px solid #fe4a65;
+                        color: #fe4a65;
+                        
+                    }
+                    
+                }
+               
+            }
+        }
+        
+    }
+    //下面的盒子
+        
+        #box222{
+            display:none;
+            background-color: #fff; 
+             padding: 6px 6px;
+             width: 100%;
+             box-sizing: border-box;
+             margin-top: 10px;
+            >ul{
+                background-color: #fff;
+                display:flex;
+                flex-wrap: wrap;
+                >li{
+                    width: 48%;
+                    margin-bottom: 10px;
+                    margin-right: 13px; 
+                    &:nth-child(2n){
+                        margin-right: 0px;
+                    }
+                    >a{
+                        display: block;
+                        width: 100%;
+                        color: #ccc;
+                        text-align: center;
+                        &>.dis{
+                            position: relative;
+                           >img{
+                        width: 100%;
+                           
+                           }
+                           >.mili{
+                               position: absolute;
+                               background-color: #e53563;
+                               padding: 0 5px;
+                               line-height: 16px;
+                               height: 16px;
+                               top: 0px;
+                               right: 0px;
+                               color: #fff;
+                               >i{
+                                   font-size: 12px;
+                               }
+                                >p{
+                                    display: inline-block;
+                                }
+                           }
+                      }
+                        &>.xiangq{
+                            margin-top: 2px;
+                            margin-bottom: 10px;
+                            width: 100%;
+                            color: #777;
+                            font-size: 12px;
+                            line-height: 18px;
+                            text-align: center;
+                            height: 18px;
+                            display: block;
+                            overflow: hidden;
+                        }
+                        &>.juan{
+                            float: left;
+                            color:  #fe4a65;
+                            >em{
+                                color:  #fe4a65;
+                                font-style: normal;
+                                margin-left: 3px;
+                             
+                            }
+                            >i{
+                                color: #777;
+                                font-size: 12px;
+                            }
+                            >del{
+                                color:  #fe4a65;
+                                display: inline-block;
+                                margin-left: 3px;
+                            }
+                        }
+                        &>.goum{
+                            >i{
+                                color: #ecabbe;
+                            }
+                            float: right;
+                        }
+                    }
+                } 
+    }
+}
+    
+
+}

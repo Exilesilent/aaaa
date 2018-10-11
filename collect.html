@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>凑一下</title>
+    <!-- 引入mui的css文件 -->
+    <link rel="stylesheet" href="./lib/mui/css/mui.css">
+    <!-- 引入自己编写的less文件 -->
+    <link rel="stylesheet/less" href="./less/collect.less">
+    <!--  引入字体图标的css文件-->
+    <link rel="stylesheet" href="./lib/fontAwesome/css/font-awesome.css">
+    <!-- 引入less的js文件 -->
+    <script src="./lib/less/less.js"></script>
+</head>
+
+<body>
+    <header id="header">
+        <a href="back.html">
+            <i class="fa fa-chevron-left"></i>
+        </a>
+        <div class="text">凑单品</div>
+    </header>
+
+    <section id="area">
+        <ul>
+            <li class="store">
+                <a href="">
+                    <span>京东</span>
+                    <i class="fa fa-chevron-down"></i>
+                </a>
+            </li>
+            <li class="region">
+                <a href="">
+                    <span>华北</span>
+                    <i class="fa fa-chevron-down"></i>
+                </a>
+            </li>
+            <li class="price">
+                <a href="">
+                    <span>1元</span>
+                    <i class="fa fa-chevron-down"></i>
+                </a>
+            </li>
+        </ul>
+        <div class="seach">
+            <i class="fa fa-search"></i>
+            <div class="sort" style="display:none">
+                <div class="seach-bar">
+                    <div class="seek">
+                        <i class="fa fa-search"></i>
+                        <input type="seach" placeholder="搜索您想要的凑单品">
+                    </div>
+                    <div class="button">搜索</div>
+                </div>
+                <div class="rank">
+                    <p>排序</p>
+                    <ul class="clearfix">
+                        <li class="fixation"><a href="">销量</a></li>
+                        <li><a href="">价格<i class="fa fa-arrow-up"></i></a></li>
+                        <li><a href="">价格<i class="fa fa-arrow-down"></i></a></li>
+                    </ul>
+                </div>
+                <div class="classify">
+                    <p>分类</p>
+                    <ul class="clearfix">
+                        <li class="fixation"><a href="">全部</a></li>
+                        <li><a href="">家居</a></li>
+                        <li><a href="">数码</a></li>
+                        <li><a href="">办公</a></li>
+                        <li><a href="">个护</a></li>
+                        <li><a href="">食品</a></li>
+                        <li><a href="">母婴</a></li>
+                        <li><a href="">清洁</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- 店铺显示 -->
+        <div class="show1">
+        </div>
+        <!-- 区域显示 -->
+        <div class="area">
+        </div>
+        <!-- 价格显示 -->
+        <div class="rate">
+            <ul>
+                <li class="min"><a href="">全部价格<span class='fa fa-check'></span></a></li>
+                <li><a href="">1-3元</a></li>
+                <li><a href="">3-5元</a></li>
+                <li><a href="">5-10元</a></li>
+                <li><a href="">10-15元</a></li>
+                <li><a href="">15元以上</a></li>
+            </ul>
+        </div>
+    </section>
+
+
+
+
+    <main id="main">
+        <ul>
+        </ul>
+    </main>
+
+    <!-- 引入zepto的js文件 -->
+    <script src="./lib/zepto/zepto.min.js"></script>
+    <!-- 引入mui的js文件 -->
+    <script src="./lib/mui/js/mui.js"></script>
+    <!-- 模板的js文件 -->
+    <script src="./translate/template-web.js"></script>
+
+    <script type="text/html" id="print">
+        <ul>
+    {{ each result value }}
+            <li value="{{ value.shopId }}" ><a href="index.html?title={{ value.shopId }}">{{ value.shopName }}</a></li>
+    {{ /each }}
+        </ul>
+    </script>
+
+    <script type="text/html" id="area1">
+        <ul>
+    {{ each result value }}
+            <li value="{{ value.areaId }}"><a href="index.html?area={{ value.areaId }}">{{ value.areaName }}</a></li>
+    {{ /each }}
+        </ul>
+    </script>
+
+    <script type="text/html" id="picture">
+        {{ each result value }}
+        <li>
+            <div class="box">
+                <a href="https://item.m.jd.com/ware/view.action?wareId=1602586267">
+                    <img src="{{ value.productImg }}" alt="">
+                    <div class="text">{{ value.productName}}</div>
+                    <div><em>{{ value.productPrice.substr(0,1)}}</em><span>{{ value.productPrice.substr(1,3) }}</span></div>
+                </a>
+            </div>
+        </li>
+    {{ /each }}
+    </script>
+    <script>
+    </script>
+    <!-- 引入自己编写的js文件 -->
+    <script src="./js/collect .js"></script>
+    <script>
+
+
+    </script>
+</body>
+
+</html>

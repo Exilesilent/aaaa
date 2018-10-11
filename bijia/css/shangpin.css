@@ -1,0 +1,343 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+input {
+  border: none;
+  outline: none;
+}
+body {
+  background-color: #efefef;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+  color: #333333;
+}
+ul,
+li {
+  list-style: none;
+}
+img {
+  border: none;
+  vertical-align: center;
+}
+.clearfix:after {
+  content: ' ';
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+html {
+  font-size: 100px;
+}
+body {
+  font-size: 0.16rem;
+}
+.border-top {
+  border-top: 0.01rem solid #cccccc;
+}
+.border-right {
+  border-right: 0.01rem solid #cccccc;
+}
+.border-bottom {
+  border-bottom: 0.01rem solid #cccccc;
+}
+.border-left {
+  border-left: 0.01rem solid #cccccc;
+}
+#tip {
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  background: #5e4674;
+  width: 100%;
+  /*宽度设置为100%，这样才能使隐藏背景层覆盖原页面*/
+  height: 100%;
+  opacity: 0.7;
+  /*非IE浏览器下设置透明度为60%*/
+  z-Index: 999;
+}
+#tip img {
+  width: 100%;
+  position: absolute;
+  margin-top: 1.5rem;
+}
+#header {
+  height: 0.5rem;
+  border-bottom: 0.01rem solid #e6e6e6;
+  background-color: #ff841d;
+}
+#header > h1 img {
+  width: 1.85rem;
+  height: 0.25rem;
+  margin-left: 0.17rem;
+  padding-top: 0.12rem;
+  float: left;
+}
+#header > a img {
+  width: 0.37rem;
+  height: 0.37rem;
+  float: right;
+  margin: 0.07rem 0.07rem 0 0;
+}
+#search {
+  height: 0.3rem;
+  padding: 0.1rem;
+  border-bottom: 0.01rem solid #e6e6e6;
+  position: relative;
+  background-color: #fff;
+}
+#search .txt {
+  width: 85%;
+  height: 0.3rem;
+  border-radius: 0.15rem;
+  background-color: #f1f1f1;
+  font-size: 0.16rem;
+  padding-left: 5%;
+}
+#search .search {
+  width: 0.63rem;
+  height: 0.3rem;
+  color: #fff;
+  font-size: 0.16rem;
+  background-color: #ff841d;
+  border-radius: 0.15rem;
+  position: absolute;
+  top: 0.1rem;
+  right: 0.1rem;
+  line-height: 0.3rem;
+}
+#nav {
+  line-height: 0.36rem;
+  padding-left: 0.08rem;
+  border-top: solid 0.01rem #ebebeb;
+  background-image: linear-gradient(to bottom, #ffffff, #ebebeb);
+  font-size: 0.14rem;
+}
+#detail {
+  background-color: #fff;
+  padding: 0.1rem;
+}
+#detail .pic {
+  width: 100%;
+  text-align: center;
+  padding-top: 0.1rem;
+  padding-bottom: 0.1rem;
+}
+#detail .eval {
+  color: #575757;
+  font-size: 0.13rem;
+  margin-top: 0.1rem;
+  padding-bottom: 0.1rem;
+}
+#detail .eval ul li {
+  float: left;
+  width: 50%;
+}
+#detail .eval ul li:nth-child(2) {
+  color: #a1a1a1;
+}
+#detail .eval ul li:nth-child(2) span {
+  color: #575757;
+}
+#main {
+  background-color: #fff;
+}
+#main .toggle {
+  background-color: #f2f2f2;
+  margin-top: 0.2rem;
+  border-top: 0.01rem solid #c14d00;
+  border-bottom: 0.01rem solid #c14d00;
+}
+#main .toggle > ul {
+  width: 100%;
+}
+#main .toggle > ul li {
+  width: 33.33%;
+  float: left;
+}
+#main .toggle > ul li:nth-child(2) a {
+  border-left: 0.01rem solid #c14d00;
+  border-right: 0.01rem solid #c14d00;
+}
+#main .toggle > ul li a {
+  display: block;
+  line-height: 0.34rem;
+  text-align: center;
+  color: #fff;
+  background-image: linear-gradient(to bottom, #ffcf4e, #ffbb01);
+}
+#main .arrow > ul {
+  width: 100%;
+}
+#main .arrow > ul > li {
+  float: left;
+  width: 33.33%;
+  height: 0.05rem;
+  position: relative;
+}
+#main .arrow > ul > li > img {
+  width: 0.08rem;
+  position: absolute;
+  left: 50%;
+  z-index: 500;
+}
+#main .other {
+  background-color: #fff;
+}
+#main .other li {
+  padding: 0.16rem 0;
+}
+#main .other li a {
+  display: block;
+  position: relative;
+}
+#main .other li a .pingtai {
+  float: left;
+  width: 33.33%;
+  font-size: 0.15rem;
+}
+#main .other li a .pingtai img {
+  width: 0.14rem;
+  height: 0.14rem;
+  margin-right: 0.04rem;
+  padding-left: 0.06rem;
+  vertical-align: middle;
+}
+#main .other li a .pingtai span {
+  color: #ccc;
+  font-size: 0.12rem;
+}
+#main .other li a .jiage {
+  float: right;
+  width: 66.66%;
+  color: red;
+  text-align: right;
+  box-sizing: border-box;
+  padding-right: 0.15rem;
+}
+#main .lowJia {
+  font-size: 0.14rem;
+  margin-top: 0.1rem;
+  margin-left: 0.05rem;
+  background-color: #fff;
+}
+#main .note {
+  font-size: 0.12rem;
+  color: #888;
+  padding: 0.08rem 0.1rem;
+  line-height: 0.18rem;
+}
+#main .para {
+  width: 100%;
+  height: 1.8rem;
+  background: url(../img/nopara2.png) no-repeat center;
+}
+#eval {
+  width: 100%;
+}
+#eval .ceil {
+  border-top: 0.04rem solid #7a7a7a;
+  margin-top: 0.05rem;
+}
+#eval > .head {
+  text-align: center;
+  background: #dbdbdb;
+  font-size: 0.14rem;
+  border-top: 0.01rem solid #fff;
+  line-height: 0.34rem;
+}
+#eval .pj_list {
+  background-color: #fff;
+  width: 100%;
+  font-size: 0.12rem;
+  color: #666;
+  padding: 0.1rem;
+  padding-bottom: 0px;
+  line-height: 0.18rem;
+}
+#eval .pj_list tr {
+  width: 100%;
+}
+#eval .pj_list tr td {
+  width: 50%;
+}
+#eval .pj_list tr td:nth-child(2) {
+  text-align: right;
+  width: 50%;
+}
+#eval .pj_list tr td i {
+  color: #ff9000;
+}
+#eval .pj_list tr:nth-child(3) > td {
+  color: #000;
+  font-size: 0.14rem;
+  line-height: 0.22rem;
+  padding-top: 0.05rem;
+}
+#eval .pj_list tr:nth-child(4) > td {
+  padding-top: 0.05rem;
+}
+#eval .more {
+  padding: 0 0.08rem;
+  margin-top: 0.16rem;
+}
+#eval .more a {
+  display: block;
+  background-color: #d4d4d4;
+  background: -webkit-gradient(linear, 0 0, 0 100%, from(#f1f1f1), to(#d4d4d4));
+  border-bottom: 0.01rem solid #bababa;
+  box-shadow: 0 0 0.01rem #666;
+  border-radius: 0.05rem;
+  text-align: center;
+  font-size: 0.14rem;
+  line-height: 0.32rem;
+  overflow: hidden;
+}
+#low {
+  height: 0.34rem;
+  margin-top: 0.25rem;
+  border-top: 0.01rem solid #c4c4c4;
+  border-bottom: 0.01rem solid #c4c4c4;
+  display: flex;
+}
+#low a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #5a5a5a;
+  box-sizing: border-box;
+  font-size: 0.14rem;
+}
+#low a img {
+  width: 0.15rem;
+  height: 0.15rem;
+}
+#low a:first-child {
+  border-right: 0.01rem solid #c4c4c4;
+  flex: 4;
+}
+#low a:nth-child(2) {
+  border-right: 0.01rem solid #c4c4c4;
+  flex: 4;
+}
+#low a:nth-child(3) {
+  flex: 6;
+}
+#foot {
+  height: 0.3rem;
+  padding: 0.15rem 0;
+  color: #666;
+  font-size: 0.12rem;
+  text-align: center;
+}
+#foot a:first-child {
+  color: red;
+}
+#foot a:last-child {
+  color: #666;
+}
+

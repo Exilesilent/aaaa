@@ -1,0 +1,197 @@
+@import "basebaicai.less";
+
+html{
+    transition: all 2s;
+}
+
+body{
+    padding-top: 45px;
+    position: relative;
+}
+#header{
+    top: 0;
+    width: 100%;
+    position: fixed;
+    background-color: @main-color;
+    color: #fff;
+    line-height: 45px;
+    z-index: 9999;
+    .left{
+        position: absolute;
+        left: 20px;
+        top: 0;
+        display: block;
+        >i{
+            font-size: 14px;
+            color: #fff;
+        }
+    }
+    .titleName{
+        text-align: center;
+        font-size: 14px;
+        width: 100px;
+        position: relative;
+        margin: 0 auto;
+        >span{
+
+        }
+        >i{
+            font-size: 14px;
+            color: #fff;
+        }
+
+    }
+    .right{
+        position: absolute;
+        top: 0;
+        right: 20px;
+        display: block;
+        >i{
+            font-size: 14px;
+            color: #fff;
+        }
+    }
+}
+
+#list{
+    background-color: #fff;
+    position: fixed;
+    top: 45px;
+    z-index: 10000;
+    width: 100%;
+    display: none;
+    >ul{
+        >li{
+            height: 51px;
+            border-bottom: 1px solid @border-color;
+            border-right: 1px solid @border-color;
+            &:nth-child(4n){
+                border-right: none;
+            }
+            >a{
+                text-align: center;
+                line-height: 50px;
+                display: block;
+                text-align: center;
+            }
+        }
+
+    }
+    .mui-btn{
+        width: 118px;
+        height: 23px;
+        padding: 0;
+        border: 1px solid @main-color;
+        border-radius: 0px;
+        display: block;
+        margin: 20px auto;
+        color: @main-color;
+    }
+}
+
+#mask{
+    background: rgba(0,0,0,.5);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 9998;
+    top: 0;
+    display: none;
+}
+
+
+#nav{
+    >ul{
+        display: flex;
+        >li{
+            &.active{
+                >a{
+                    color: @main-color;
+                    border-bottom: 1px solid @main-color;
+                }
+            }
+            flex: 1;
+            a>{
+                display: block;
+                text-align: center;
+                font-size: 14px;
+                color: black;
+                line-height: 45px;
+            }
+        }
+    }
+}
+
+#productList{
+    padding: 6px 5px 5px 0px;
+    .mui-row{
+        >div{
+            .product{
+                position: relative;
+                margin-left: 5px;
+                .img{
+                    height: 180px;
+                    width: 180px;
+                    >img{
+                        width: 100%;
+                    }
+                }
+                .ticket{
+                    background-color: @main-color;
+                    position: absolute;
+                    color: #fff;
+                    text-align: center;
+                    font-size: 10px;
+                    line-height: 10px;
+                    right:2px;
+                    top: 0px;
+                    padding: 3px;
+                }
+                .product-name{
+                    text-align: center;
+                    font-size: 12px;
+                    overflow: hidden;
+                    height: 21px;
+                }
+                .product-info{
+                    font-size: 14px;
+                    float: left;
+                    >i{
+                        font-size: 12px;
+                        color: @main-color;
+                    }
+                    >em{
+                        font-size: 14px;
+                        padding: 0 5px;
+                    }
+                    >del{
+                        float: right;
+                        font-size: 12px;
+                        margin-left: 8px;
+                    }
+                }
+
+            }
+        }
+    }
+}
+
+
+#comeback{
+    width: 44px;
+    height: 44px;
+    position: fixed;
+    bottom: 60px;
+    right: 10px;
+    border:1px solid @border-color;
+    color: #ccc;
+    background-color: rgba(255,255,255,.85);
+    border-radius: 50%;
+    text-align: center;
+    display: none;
+    i{
+        font-size: 18px;
+
+        line-height: 42px;
+    }
+}

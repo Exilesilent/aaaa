@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <!-- 引入mui的css文件 -->
+    <link rel="stylesheet" href="./lib/mui/css/mui.css">
+    <!-- 引入自己编写的less文件 -->
+    <link rel="stylesheet/less" href="./less/back.less">
+    <!--  引入字体图标的css文件-->
+    <link rel="stylesheet" href="./lib/fontAwesome/css/font-awesome.css">
+    <!-- 引入less的js文件 -->
+    <script src="./lib/less/less.js"></script>
+</head>
+
+<body>
+    <header id="header">
+        <a href="index.html">
+            <i class="fa fa-chevron-left"></i>
+        </a>
+        <div class="text">凑单品</div>
+    </header>
+
+    <section id="delivery">
+        <div class="title">
+            距离免运费还差多少元
+        </div>
+        <div class="balance">
+            <div class="import">
+                <i class="mui-icon mui-icon-location"></i>
+                <span>输入差额</span>
+            </div>
+            <div class="mui-numbox " data-numbox-step='1' data-numbox-min='0' data-numbox-max='100'>
+                <button class="mui-btn mui-numbox-btn-minus" type="button">-</button>
+                <input class="mui-numbox-input" type="number" />
+                <button class="mui-btn mui-numbox-btn-plus" type="button">+</button>
+            </div>
+        </div>
+        <p>商城和地区选择</p>
+        <div class="cheet">
+            <ul>
+                <li>
+                    <div class="shoop">
+                        <i class="fa fa-cart-arrow-down"></i>
+                        <span>商城选择</span>
+                    </div>
+                    <div class="stroe">
+                        <select name="" id="">
+                            <option value="">京东商城</option>
+                            <option value="">一号店</option>
+                            <option value="">天猫超市</option>
+                        </select>
+                        <i class="fa fa-arrow-right"></i>
+                    </div>
+                </li>
+                <li>
+                    <div class="ship">
+                        <i class="fa fa-bicycle"></i>
+                        <span>选择配送地区</span>
+                    </div>
+                    <div class="area">
+                        <select name="" id="">
+                            <option value="">华北</option>
+                            <option value="">华东</option>
+                            <option value="">华南</option>
+                            <option value="">华中</option>
+                            <option value="">西南</option>
+                            <option value="">东北</option>
+                            <option value="">西北</option>
+                        </select>
+                        <i class="fa fa-arrow-right"></i>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="refer">
+            <a href="collect .html">凑一下</a>
+        </div>
+    </section>
+
+
+    <!-- 引入zepto的js文件 -->
+    <script src="./lib/zepto/zepto.min.js"></script>
+    <!-- 引入mui的js文件 -->
+    <script src="./lib/mui/js/mui.js"></script>
+    <!-- 模板的js文件 -->
+    <script src="./translate/template-web.js"></script>
+    <script>
+
+    </script>
+
+
+    <script>
+
+
+    </script>
+</body>
+
+</html>

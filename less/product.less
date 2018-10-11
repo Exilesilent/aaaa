@@ -1,0 +1,76 @@
+@import "base.less";
+
+#header{
+    display: flex;
+    padding: 8px 10px;
+    background-color: @main-color;
+
+
+    .name{
+        line-height: 28px;
+        padding-right: 10px;
+        font-weight: 600;
+        color: #fff;
+
+    }
+
+    >form{
+        flex: 1;
+        position: relative;
+        margin-right: 10px;
+        >input{
+            border-radius: 5px;
+            padding: 6px;
+            padding-left: 10px;
+            width: 100%;
+            font-size: 14px;
+
+
+        }
+        >a{
+            position: absolute;
+            right: 8px;
+            top: 3px;
+        }
+    }
+    .list{
+        width: 20px;
+        height: 28px;
+        color: #fff;
+        >i{
+            font-size: 16px;
+            text-align: center;
+            line-height: 28px;
+        }
+    }
+}
+
+
+#main{
+    #slide{
+
+    }
+    #nav{
+        padding: 10px 0px;
+        >ul{
+            display: flex;
+            >li{
+                flex: 1;
+                >a{
+                    display: block;
+                    text-align: center;
+                    >img{
+                        margin: 0 auto;
+                        display: block;
+                        width: 51px;
+                    }
+                    >span{
+                        display: block;
+                        margin-top: 6px;
+                        font-size: 12px;
+                    }
+                }
+            }
+        }
+    }
+}

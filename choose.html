@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="./lib/mui/css/mui.min.css">
+    <link rel="stylesheet" href="./lib/fontAwesome/css/font-awesome.min.css">
+    <link rel="stylesheet/less" href="./less/choose.less">
+    <script src="./lib/less/less.js"></script>
+</head>
+
+<body>
+    <header id="header">
+        <a href="index.html" class="left">
+            <img src="https://img.alicdn.com/imgextra/i1/690311/TB2cMR0aQUmBKNjSZFOXXab2XXa_!!690311.png" alt="">
+        </a>
+        <a href="" class="right">
+            <img src="https://img.alicdn.com/imgextra/i2/690311/TB2beKvaTXYBeNkHFrdXXciuVXa_!!690311.png" alt="">
+        </a>
+    </header>
+    <nav id="nav">
+        <div>
+            <a href="">
+                <img src="" alt="">
+                <p>肯德基</p>
+            </a>
+        </div>
+        <div>
+            <a href="">
+                <img src="" alt="">
+                <p>必胜客</p>
+            </a>
+        </div>
+        <div>
+            <a href="">
+                <img src="" alt="">
+                <p>约翰逊</p>
+            </a>
+        </div>
+        <div>
+            <a href="">
+                <img src="" alt="">
+                <p>哈根达</p>
+            </a>
+        </div>
+    </nav>
+
+
+
+<script type="text/html" id="navtpl" >
+    {{each result value}}
+    <div>
+        <a href="couponproduct.html?couponId={{value.couponId}}">
+            <img src="{{value.couponImg}}" alt="">
+            <p>{{value.couponTitle}}</p>
+        </a>
+    </div>
+    {{/each}}
+</script>
+
+
+    <script src="lib/zepto/zepto.min.js"></script>
+    <script src="./lib/mui/js/mui.js"></script>
+    <script src="./lib/artTemplate/template-web.js"></script>
+    <script src="./js/choose.js"></script>
+</body>
+
+</html>

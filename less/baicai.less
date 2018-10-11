@@ -1,0 +1,357 @@
+﻿@import "basebaicai.less";
+// 封装的导航栏
+ html{
+     transition: 1s;
+ }
+.navs(@colors){
+    margin: 0 auto;
+    margin-bottom: 10px;
+    display: block;
+    line-height: 51px;
+    text-align: center;
+    color: @colors;
+    font-size: 51px; 
+}
+/*头部*/
+#header{
+    max-width: 768px;
+    background-color:@color ;
+    height: 44px;
+    width: 100%;
+    padding:8px 10px;
+    box-sizing: border-box;
+    z-index: 999;
+    position: fixed;
+    top: 0px;
+    display: flex;
+    >.one{
+        float: left;
+        font-weight: bold;
+        color: white;
+        font-size: 16px;
+        line-height: 28px;
+    }
+    >div{
+        margin-left: 10px;
+        background-color:white;
+        height: 28px;
+        line-height: 28px;
+        border-radius: 5px;
+        padding: 0px 8px;
+        flex: 1;
+        form{
+            position: relative;
+           > input{
+                width: 100%;
+            }
+            >i.fa-search{
+                position: absolute;
+                right: -8px;
+                top: 6px;
+                width: 28px;
+                height: 28px;
+                font-size: 18px;
+                display: block;
+                color: #ccc;
+               
+            }
+        }
+      
+    }
+    >.two{ 
+        width: 28px;
+        line-height: 28px;
+        text-align: center;
+        height: 28px;
+        color: #fff;
+        float: left;
+        >i.icon-liebiao{
+            font-size: 18px;
+        }
+        
+    }
+}
+//轮播图
+.swiper-container { 
+    max-width: 768px;
+    width: 100%;
+    height: 250px;
+    .swiper-wrapper{
+        margin-top: 44px;
+    }
+    img{
+        width:100%;
+        height: 100%;
+
+    }
+}  
+/*导航one*/
+#main{
+    #nav-one{
+        background-color: white;
+        height: 75px;
+        width: 100%;
+        padding: 10px 0px;
+        >ul{
+            display:flex;
+            >li{
+                flex: 1px;
+                >a{
+                    text-align: center;
+                    display: block;
+                    height: 75px;
+                    >i{
+                       &.icon-rexiaochanpin{
+                       .navs(#ffc151);     
+                      }
+                      &.icon-9-copy{
+                        .navs(#fe4a65);
+                        }
+                      &.icon-lipinduihuan{
+                            .navs(#ff7692);
+                        }
+                      &.icon-renqibang{
+                        background-color: #a992ff;
+                        width: 51px;
+                        height: 51px;
+                        margin: 0 auto;
+                        margin-bottom: 10px;
+                        display: block;
+                        line-height: 51px;
+                        border-radius: 50%;
+                        text-align: center;
+                        color: #ffffff;
+                        font-size: 24px;
+                      }
+                    }
+                   
+                }
+            }
+        }
+    }
+
+    /*导航two*/
+    #nav-two{
+    background-color: #fff;
+    margin-bottom: 10px;
+    margin-top:10px;
+    padding-top: 1px;
+    height: 193px;
+    width: 100%;
+    overflow: hidden;
+    >.renqi{
+        padding: 10px 10px 5px 10px;
+        >h3{
+            height: 16px;
+            line-height: 16px;
+            font-size: 14px;
+            border-left:3px solid #fe4a65;
+            padding-left: 10px;
+            color: #666;
+            float: left;
+            font-weight: bold;
+        }
+        >a{
+            
+            float: right;
+        }
+    }
+    >.rqList{
+        height: 180px;
+        width:100%;
+        padding: 0 10px;
+        box-sizing: border-box;
+        margin-top: 20px;
+        overflow:auto;
+            >ul{
+                width: 2000px;
+                >li{
+            width: 106px;
+            height: 160px;
+            float: left;
+            margin-right: 10px;
+            
+            >a{
+                width: 100%;
+                height: 100%;
+                display: block;
+                >.dd>img{
+                    width: 106px;
+                    max-width: 106px;
+                    max-height: 106px;
+                    vertical-align: middle;
+                }
+                &>.title{
+                    display: block;
+                    color: #666;
+                    margin: 10px 0;
+                    height: 12px;
+                    overflow: hidden;
+                    line-height: 12px;
+                }
+                &>.ww{
+                    color: #fe4a65;
+                    >em{
+                        color:  #fe4a65;
+                        font-style: normal;
+                        margin-left: 3px;
+                     
+                    }
+                    >i{
+                        color: #777;
+                        font-size: 12px;
+                    }
+                    >del{
+                        color:  #fe4a65;
+                        display: inline-block;
+                        margin-left: 3px;
+                    }
+                }
+            }
+        }
+        
+        }
+    
+    }
+    }
+    /*导航three*/
+    #nav-three{
+        background-color: white;
+        width: 100%;
+        >.youh{
+            padding: 10px 10px 5px 10px;
+            >h3{
+                padding-left: 10px;
+                height: 16px;
+                line-height: 16px;
+                color: #666;
+                border-left: 3px solid #fe4a65;
+                font-size: 14px;
+                font-weight: bold;
+                display:inline-block;
+            }
+            >span{
+                background: #ffe5ec;
+                color: #fe4a65;
+                height: 16px;
+                padding: 0 5px;
+                margin-left: 9px;
+                border-radius: 4px;
+                line-height: 16px;
+                font-size: 12px;
+                
+               
+            }
+        }
+        /*商品展示*/
+        >.youhList{
+            background-color: #fff; 
+             padding: 6px 6px;
+             width: 100%;
+             box-sizing:border-box;
+            >ul{
+                background-color: #fff;
+                display:flex;
+                flex-wrap: wrap;
+                >li{
+                    width: 50%;
+                    margin-bottom: 10px;
+                    &:nth-of-type(n){
+                        padding-right:3px; 
+
+                    }
+                    &:nth-of-type(2n){
+                        padding-left:3px; 
+
+                    }
+                
+                    >a{
+                        display: block;
+                        width: 100%;
+                        color: #ccc;
+                        text-align: center;
+                        &>.dis{
+                            position: relative;
+                           >img{
+                        width: 100%;
+                           
+                           }
+                           >.mili{
+                               position: absolute;
+                               background-color: #e53563;
+                               padding: 0 5px;
+                               line-height: 16px;
+                               height: 16px;
+                               top: 0px;
+                               right: 0px;
+                               color: #fff;
+                               >i{
+                                   font-size: 12px;
+                               }
+                                >p{
+                                    display: inline-block;
+                                }
+                           }
+                      }
+                        &>.xiangq{
+                            margin-top: 2px;
+                            margin-bottom: 10px;
+                            width: 100%;
+                            color: #777;
+                            font-size: 12px;
+                            line-height: 18px;
+                            text-align: center;
+                            height: 18px;
+                            display: block;
+                            overflow: hidden;
+                        }
+                        &>.juan{
+                            float: left;
+                            color:  #fe4a65;
+                            >em{
+                                color:  #fe4a65;
+                                font-style: normal;
+                                margin-left: 3px;
+                             
+                            }
+                            >i{
+                                color: #777;
+                                font-size: 12px;
+                            }
+                            >del{
+                                color:  #fe4a65;
+                                display: inline-block;
+                                margin-left: 3px;
+                            }
+                        }
+                        &>.goum{
+                            >i{
+                                color: #ecabbe;
+                            }
+                            float: right;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+#lastfooter{
+    display:block;
+    position: fixed;
+    right: 8px;
+    bottom: 10px;
+    background-color:#fff;
+    border-radius: 22px;
+    border: 1px solid #ccc;
+    text-align: center; 
+    height: 0px;
+    width: 0px;
+
+    >img{
+        margin-top: 8px;
+        margin-left: 1px;
+        width: 25px;
+    }
+}

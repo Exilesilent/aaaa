@@ -1,0 +1,74 @@
+/* 公共变量 */
+
+@main-color: #fe4a65;
+@border-color: #ccc;
+@a-color: #666;
+
+//设置根元素字体大小
+html{
+    font-size: 100px;
+    height: 100%;
+}
+//字体大小恢复16px
+body{
+    height: 100%;
+    font-size: 0.16rem;
+    background-color: #fff;
+
+}
+/* 样式重置 */
+
+* {
+    margin: 0px;
+    padding: 0px;
+    /*在移动端设置盒模型border-box 为了防止元素加边框或者padding出现水平滚动条*/
+    box-sizing: border-box;
+    /* 去除移动端按住元素的时候会出现高亮背景色 */
+    -webkit-tap-highlight-color: transparent;
+    /* 去掉所有移动端内边框 */
+    outline: none;
+}
+
+a {
+    color: @a-color;
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+input {
+    border: 0;
+}
+
+img {
+    /* 解决图片底部3px的间隙 为了让图片的对齐方式和文本一致*/
+    vertical-align: middle;
+}
+
+i {
+    font-style: normal;
+}
+
+
+/* 公共样式 */
+
+.pull-left {
+    float: left;
+}
+
+.pull-right {
+    float: right;
+}
+
+.clearfix::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+
+
+
+

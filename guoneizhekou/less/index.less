@@ -1,0 +1,145 @@
+/* 1.把公共的样式链接进来 */
+
+@import 'base.less';
+/* header代码 */
+
+body {
+    background-color: #efefef;
+    padding: 80px 0px 0px;
+}
+
+/* 商品列表 */
+
+#main {
+    max-width: 960px;
+    margin: 10px auto;
+    background-color: #fff;
+    .main-content {
+        #ul {
+            display: flex;
+            flex-wrap: wrap;
+            >li {
+                width: 50%;
+                border-bottom: 1px solid #e3e3e4;
+                >a {
+                    display: block;
+                    .picture {
+                        margin: 10px auto;
+                        overflow: hidden;
+                        width: 140px;
+                        max-width: 140px;
+                        height: 140px;
+                        img {
+                            width: 140px;
+                            height: 140px;
+                            max-width: 140px;
+                            vertical-align: middle;
+                        }
+                    }
+                    .title {
+                        padding: 0px 10px;
+                        >strong {
+                            display:block;
+                            width: 176px;
+                            font-size: 14px;
+                            word-break: break-all;
+                            -webkit-box-orient: vertical;
+                            -webkit-line-clamp: 2;
+                            overflow: hidden;
+                            text-overflow: ellipsis;
+                            display:-webkit-box;
+                        }
+                    }
+                    .price {
+                        font-size: 14px;
+                        padding: 5px 10px;
+                        color: @a-color;
+                    }
+                    .time {
+                        font-size: 12px;
+                        padding: 5px 10px 12px;
+                    }
+                }
+                &:nth-child(odd) {
+                    border-right: 1px solid #e3e3e4
+                }
+            }
+        }
+    }
+}
+
+/* 底部css代码 */
+
+#footer {
+    position: relative;
+    .lazy{
+        width: 80px;
+        height: 80px;
+        position: absolute;
+        left: 50%;
+        margin-left: -40px;
+        img{
+            width: 100%;
+            
+        }
+    }
+    .blank {
+        height: 30px;
+        margin-top: 15px;
+        margin-bottom: 15px;
+        background-color: #fff7f7;
+    }
+    .title {
+        height: 35px;
+        margin-bottom: 15px;
+        background-color: #f6f6f6;
+        padding-left: 10px;
+        line-height: 35px;
+        font-size: 14px;
+        box-shadow: 0px 1px 10px 1px #ccc;
+    }
+    .footer-nav {
+        border-top: 1px solid #c7c7c7;
+        border-bottom: 1px solid #c7c7c7;
+        ul {
+            display: flex;
+            >li {
+                flex: 1;
+                text-align: center;
+                height: 30px;
+                >a {
+                    font-size: 14px;
+                    i.icon-xiangshangjiantou {
+                        font-size: 18px;
+                        color: gray;
+                    }
+                }
+                &:nth-of-type(3) {
+                    width: 33.33%;
+                }
+                &+li {
+                    border-left: 1px solid #c7c7c7;
+                }
+            }
+        }
+    }
+    .app {
+        height: 60px;
+        text-align: center;
+        padding: 6px;
+        >a {
+            font-size: 14px;
+            &:first-child {
+                color: @a-color;
+            }
+            &:nth-of-type(3) {
+                color: #7f7f7f;
+            }
+        }
+        .http {
+            a {
+                color: #7f7f7f;
+            }
+        }
+    }
+}

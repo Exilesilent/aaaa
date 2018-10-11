@@ -1,0 +1,132 @@
+/*初始化代码*/
+body, p, a, h1, h2, h3, h4, li, ul, dd, dt, span, img, i, a, del, strong, dl, input {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+i {
+    font-style: normal;
+}
+
+li {
+    list-style: none;
+}
+
+h1, h2, h3, h4 {
+    font-weight: normal;
+}
+
+input {
+    outline: none;
+    border: 0 none;
+}
+
+img {
+    border: 0 none;
+    vertical-align: middle;
+}
+
+body, p {
+    font: 12px/100% '微软雅黑';
+}
+
+a {
+    text-decoration: none;
+    color: #000000;
+}
+
+body {
+    background-color: #f2f2f2;
+    max-width: 768px;
+    margin: 0px auto;
+}
+
+/*消除浮动*/
+.clearfix:after {
+    content: '.';
+    display: block;
+    clear: both;
+    visibility: hidden;
+    height: 0;
+}
+
+.clearfix {
+    *zoom: 1;
+}
+/* 头部部分开始*/
+@color:#fe4a65;
+
+
+// 右侧导航
+#offside{
+    position:fixed;
+    top: 44px;
+    background: rgba(0,0,0,.5);
+    width: 100%;
+    height: 100%;
+    max-width: 768px;
+    z-index: 998;
+    ul{
+         background-color: #fff;
+        width: 100%;
+        display:flex;
+        flex-wrap: wrap; 
+        margin-bottom: -1px;
+        >li{
+            width: 25%;
+            height: 51px;
+            line-height: 51px;
+            border-left: 1px solid #eeeeee;
+            border-bottom: 1px solid #eeeeee;
+            box-sizing: border-box;
+            >a{
+                display:block;
+                height: 51px;
+                line-height: 51px;
+                text-align: center;
+                font-size: 15px;
+                color:#5c5c5c;
+            }
+            &:last-of-type{
+                border-right: 1px solid #eeeeee;
+            }
+        }
+    }
+    >p{
+        background-color: #fff;
+        height: 80px;
+        line-height: 55px;
+        width: 100%;
+        padding-top: 30px;
+        // box-sizing: border-box;
+        >span{
+            text-align: center;
+            margin: 0px auto ;
+            display: block;
+            line-height: 24px;
+            width: 120px;
+            height: 25px;
+            border:1px solid #fe4a65;
+            color: #fe4a65;
+            font-size: 15px;
+         }
+    }
+    
+}
+//伟鹏的
+
+@main-color: #fe4a65;
+@border-color: #ccc;
+@a-color: #666;
+
+
+html{
+    font-size: 100px;
+}
+
+body{
+    font-size: 0.16rem;
+    background-color: #fff;
+
+}

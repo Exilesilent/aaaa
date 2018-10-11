@@ -1,0 +1,47 @@
+// 公共样式
+html {
+    font-size: 100px;
+}
+
+body {
+    //也可以缩小100倍写0.16rem
+    font-size: 0.16rem;
+}
+
+
+/* 样式重置 */
+
+* {
+    margin: 0px;
+    padding: 0px;
+    /*在移动端设置盒模型border-box 为了防止元素加边框或者padding出现水平滚动条*/
+    box-sizing: border-box;
+    /* 去除移动端按住元素的时候会出现高亮背景色 */
+    -webkit-tap-highlight-color: transparent;
+    /* 去掉所有移动端内边框 */
+    outline: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+li {
+    list-style: none;
+}
+
+input {
+    border: 0;
+}
+
+img {
+    /* 解决图片底部3px的间隙 为了让图片的对齐方式和文本一致*/
+    vertical-align: middle;
+}
+
+i {
+    font-style: normal;
+}

@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet/less" href="./less/shengqiankong.less">
+    <script src="../js/less.js"></script>
+    <link rel="stylesheet" href="./font/iconfont.css">
+</head>
+
+<body>
+    <header id="header">
+        <div class="headertop fixed">
+            <div class="top">
+                <div class="logo">
+                    <h1>
+                        <a href="../index.html">
+                            <img src="../images/mlogo.png" alt="">
+                        </a>
+                    </h1>
+                </div>
+                <div class="searchBar">
+                    <form action="" method="GET">
+                        <i class="iconfont icon-fangdajing"></i>
+                        <input type="text" name="key" placeholder="搜索商品比价">
+                    </form>
+                </div>
+                <div class="download">
+                    <a href="#">下载</a>
+                </div>
+            </div>
+            <div class="tab">
+                <div class="nav">
+                    <ul class="navbar">
+                        <li>
+                            <a href="../index.html">
+                                <i> 首页</i>
+                            </a>
+                        </li>
+                        <li class="active">
+                            <a href="index.html">
+                                <i>省钱控</i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="../bijia/bijia.html">
+                                <i>比价搜索</i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="../guoneizhekou/index.html">
+                                <i>国内折扣</i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="../history.html">
+                                <i>查历史价</i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="../baicai.html">
+                                <i>白菜价</i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="../choose.html">
+                                <i>小时风云榜</i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main id="main">
+        <div class="container">
+            <ul>
+                <li>
+                    <a href="#">
+                        <div class="left">
+                            <img src="../images/555gif"alt="">
+                        </div>
+                        <div class="right">
+                            <div class="title">
+                                里奥 龙凤章
+                                <span>13.8元起包邮（后</span>
+                            </div>
+                            <div class="other">
+                                <div class="mall">
+                                    <span>传智播客 |10-0814:48</span>
+                                </div>
+                                <div class="message">
+                                    <i class="iconfonticonduanxin"></i>
+                                    "0"
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="page">
+            <div class="previousPage">
+                <a href="#">上一页</a>
+            </div>
+            <div class="selectPage">
+                <select id="select">
+                    <option value="1">1</option>
+                </select>
+            </div>
+            <div class="nextPage">
+                <a href="#">下一页</a>
+            </div>
+        </div>
+    </main>
+    <nav id="nav">
+        <a href="shengqiankong.html">首页</a>
+        <a href=" #">省钱控</a>
+    </nav>
+
+    <!-- 底部区域 -->
+    <footer id="footer">
+        <div class="top">
+            <span>品牌排行</span>
+            <a href="#">
+                <img src="/aaaa/images/more.png" alt="">
+            </a>
+        </div>
+        <div class="footnav">
+            <div class="login">
+                <a href="../login.html">登录</a>
+            </div>
+            <div class="reg"><a href="../reg.html">注册</a></div>
+            <div class="toIndex">
+                <a href="#">
+                    <i class="iconfont icon-icon-test"></i>
+                    返回顶部</a>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="text">
+                <a href="#">手机APP下载</a>
+                <a href="#">慢慢买手机版</a>
+                <span>-- 掌上比价平台</span>
+                <p>m.manmanbuy.com</p>
+            </div>
+
+
+        </div>
+    </footer>
+    <script src="/aaaa/lib/artTemplate/template-web.js"></script>
+    <script src="/aaaa/lib/zepto/zepto.min.js"></script>
+    <script src="./js/index.js"></script>
+</body>
+
+</html>
+<script type="text/html" id="productTpl">
+{{each list value}}
+<li>
+        <a href="details.html?productId={{value.productId}}">
+            <div class="left">
+                {{@value.productImgSm}}
+            </div>
+            <div class="right">
+                <div class="title">
+                    {{value.productName}}
+                    <span>{{value.productPinkage}}</span>
+                </div>
+                <div class="other">
+                    <div class="mall">
+                        <span>{{value.productFrom}} | {{value.productTime}}</span>
+                    </div>
+                    <div class="message">
+                        <i class="iconfont icon-duanxin"></i>
+                        {{value.productComCount.replace('有','').replace('人评论','')}}
+                    </div>
+                </div>
+            </div>
+        </a>
+    </li>
+{{ /each}}
+</script>
+
+<script type="text/html" id="pageTpl">
+    <div class="previousPage">
+            <a href="page({{currentPage-1}})">上一页</a>
+        </div>
+   <% for(var i=1;i<pageNum;i++){ %>
+   <option value="{{i}}">{{i}}/{{pageNum}}</option>
+   <% } %>
+</script>
+

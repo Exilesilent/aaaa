@@ -1,0 +1,134 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: #666;
+}
+
+input {
+    border: 0 none;
+    outline: 0 none;
+}
+img{
+    border: 0 none;
+    vertical-align: middle;
+}
+li{
+    list-style: none;
+}
+html{
+    font-size: 100px;
+}
+body{
+    font-size: 16px;
+}
+
+/* 头部区域 */
+#header {
+    width: 100%;
+    height: 0.44rem;
+    background-color: #ff841d;
+    display: flex;
+    padding: 0px 0.08rem;
+    box-shadow: 0px 0px 0.08rem 0.01rem #ccc;
+}
+
+#header .logo {
+    float: left;
+}
+
+#header .logo a {
+    display: block;
+    width: 0.44rem;
+    height: 0.44rem;
+    text-align: center;
+    line-height: 0.44rem;
+}
+
+#header .logo a>img {
+    width: 0.14rem;
+    height: 0.2rem;
+    margin-top: -0.03rem;
+}
+#header .titel{
+    flex: 1;
+    color: #fff;
+    font-size: 0.2rem;
+    line-height: 0.44rem;
+    text-align: center;
+}
+#header .app {
+    float: right;
+    width: 0.44rem;
+    height: 0.44rem;
+    background-color: #ff841d;
+}
+
+/* 主体区域 */
+#main{
+    width: 100%;
+    height: 8rem;
+    padding: 0.1rem;
+}
+#main .linkTitel{
+    width: 100%;
+}
+#main .linkTitel span{
+    font-size: 0.12rem;
+    color: #636363;
+}
+#main .input{
+    width: 100%;
+    height: 0.49rem;
+    margin-top: 0.1rem;
+    border-bottom:0.01rem solid #e3e3e3;
+}
+#main .input p{
+    font-size: 0.14rem;
+    color: #999;
+    padding-top: 0.05rem;
+}
+#main .input input{
+    display: none;
+    background-color: #fff;
+    height: 0.3rem;
+    width: 100%;
+}
+#main .button{
+    width: 100%;
+    margin: 0.3rem auto;
+    text-align: center;
+}
+#main .button button{
+    height: 0.4rem;
+    background-color: #fff;
+    border: 0.01rem solid #e3e3e3;
+    border-radius: 0.2rem;
+    font-size: 0.16rem;
+}
+#main .button button:first-child{
+    width: 1.48rem;
+}
+#main .button button:last-child{
+    width: 0.84rem;
+}
+#main .buzou{
+    margin-top: 0.5rem;
+    width: 100%;
+}
+#main .buzou p{
+    font-size: 0.12rem;
+    line-height: 0.24rem;  
+    color: #999;
+}
+
+#main .buzou p.titel{
+    font-size: 0.14rem;
+    color: #636363;
+    line-height: 0.3rem;
+}
+

@@ -1,0 +1,52 @@
+﻿@import 'basefy.less';
+@main-color: #ff841d;
+body {
+    background-color: #fff;
+}
+
+//主页头部样式
+#header {
+    background-color: #ff841d;
+    height: 50px;
+    padding: 10px;
+    .left {
+        display: block;
+        float: left;
+        img {
+            width: 185px;
+        }
+    }
+    .right {
+        display: block;
+        float: right;
+        img {
+            width: 34px;
+            margin-top: -5px;
+        }
+    }
+}
+
+//导航部分样式
+#nav {
+    display: flex;
+    flex-wrap:wrap;
+    margin-top: 10px;
+    >div {
+        border: 1px solid #f7f7f7;
+        height: 100px;
+        width: 30%;
+        text-align: center;
+        margin: 5px;
+        a{
+            display: block;
+            height: 100%;
+            img{
+               width: 50px;
+               margin-top: 10px;
+            }
+            p{
+
+            }
+        }
+    }
+}

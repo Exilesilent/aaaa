@@ -1,0 +1,168 @@
+/* 1.变量 */
+@a-color:#f85000;
+@p-color:#ff6c00;
+@border-color:#dddddd;
+
+*{
+    padding: 0px;
+    margin: 0px;
+    // 添加box-sizing防止添加边框或者padding出现滚动条
+    box-sizing: border-box;
+    //去除鼠标移动上去出现高亮的背景色
+    -webkit-tap-highlight-color: transparent;
+    outline: none;
+}
+
+a{
+    text-decoration: none;
+    color: #000;
+    &:active{
+        color: #000;
+    }
+}
+
+li{
+    list-style: none;
+}
+
+img{
+    vertical-align: middle;
+}
+
+input{
+    border: 0;
+}
+
+i{
+    font-style: normal;
+}
+
+.pull-left{
+    float: left;
+}
+
+
+.pull-right{
+    float: right;
+}
+
+.clearfix::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+
+#header {
+    position: fixed;
+    z-index: 999;
+    width: 100%;
+    top: 0px;
+    background-color: #fff;
+    display: flex;
+    height: 44px;
+    padding: 10px; // background-color: red;
+    border-bottom: 1px solid @border-color;
+    .logo {
+        display: block;
+        text-align: center;
+        >img {
+            width: 84px;
+            height: 25px;
+        }
+    }
+    form {
+        flex: 1;
+        position: relative;
+        margin-top: -4px;
+        i.icon-41 {
+            font-size: 16px;
+            color: @border-color;
+            position: absolute;
+            top: 5px;
+            left: 26px;
+            ;
+        }
+        input {
+            height: 30px;
+            width: 88%;
+            padding-left: 25px;
+            margin-left: 20px;
+            margin-right: 10px;
+            background-color: #f9f9f9;
+            border-radius: 15px;
+            text-align: left;
+        }
+    }
+    .down {
+        width: 40px;
+        height: 25px;
+        font-size: 14px;
+        text-align: center;
+        border: 1px solid @a-color;
+        border-radius: 15px;
+    }
+}
+
+/* 导航栏css代码 */
+
+#nav {
+    position: fixed;
+    z-index: 998;
+    width: 100%;
+    margin-top: -40px; 
+    background-color: #fff;
+    box-shadow: 0px 1px 4px 0px @border-color;
+    .nav-length {
+       overflow: hidden;
+       width: 100%;
+        .swiper-container{
+            width: 100%;
+            .swiper-wrapper{
+                .swiper-slide{
+                   width: auto;
+                    ul {
+                        display: flex;
+                        >li {
+                            position: relative;
+                            // flex: 1;
+                            margin-right: 17px;
+                            >a {
+                                display: block;
+                                width: 84px;
+                                height: 40px;
+                                text-align: center;
+                                line-height: 40px;
+                                font-size: 15px;
+                                >strong {
+                                    display: inline-block;
+                                }
+                               
+                            }
+                            &.active{
+                                >a{
+                                    position: relative;
+                                    &::after{
+                                        content: '';
+                                        width: 30px;
+                                        height: 4px;
+                                        background-color: @a-color;
+                                        position: absolute;
+                                        bottom: 0;
+                                        left:25px;
+                                     }
+                                }
+                            }
+                            &:first-child {
+                                width: 40px;
+                            }
+                           
+                        }
+                    }
+                }
+            }
+        }
+       
+    }
+}
+
+

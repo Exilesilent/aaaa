@@ -1,0 +1,242 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: #666;
+}
+
+input {
+    border: 0 none;
+    outline: 0 none;
+}
+
+img {
+    border: 0 none;
+    vertical-align: middle;
+}
+html{
+    font-size: 100px;
+}
+body{
+    font-size: 16px;
+    background-color: #f2f2f2;
+}
+
+/* 头部区域 */
+#header {
+    width: 100%;
+    height: 0.51rem;
+    background-color: #ff841d;
+}
+
+#header .logo {
+    float: left;
+}
+
+#header .logo a {
+    display: block;
+    width: 1.85rem;
+    height: 0.25rem;
+    margin-top: 0.13rem;
+    margin-left: 0.2rem;
+}
+
+#header .logo a>img {
+    width: 100%;
+    height: 100%;
+}
+
+#header .app {
+    float: right;
+    padding-top: 0.09rem;
+    margin-right: 0.2rem;
+}
+
+#header .app img {
+    width: 0.34rem;
+    height: 0.34rem;
+}
+
+/* 搜索区域 */
+
+#search {
+    width: 100%;
+    height: 0.51rem;
+    background-color: #fff;
+    border-bottom: 0.01rem solid #e6e6e6;
+}
+
+#search .search {
+    width: 100%;
+    width: 100%;
+}
+
+#search .searchBar {
+    float: left;
+    width: 89%;
+    height: 0.31rem;
+}
+
+#search .searchBar input {
+    width: 100%;
+    height: 100%;
+    margin-top: 0.1rem;
+    margin-left: 0.11rem;
+    background-color: #f1f1f1;
+    border-radius: 0.15rem;
+    padding-left: 0.3rem;
+    font-size: 0.16rem;
+}
+
+#search .searchSub {
+    float: right;
+    margin-top: 0.11rem;
+    position: absolute;
+    right: 0.11rem;
+}
+
+#search .searchSub input {
+
+    width: 0.63rem;
+    height: 0.3rem;
+    background-color: #ff841d;
+    border-radius: 0.15rem;
+    font-size: 0.16rem;
+    line-height: 0.3rem;
+    text-align: center;
+    color: #fff;
+}
+
+/* 登录区域 */
+#main{
+    height: 100%;
+    width: 100%;
+    background-color: #f2f2f2;
+    padding: 0.03rem 0.13rem;
+}
+#main input{
+    margin-top: 0.1rem;
+    width: 100%;
+    height: 0.38rem;
+    display: block;
+    font-size: 0.14rem;
+    border: solid 0.01rem #ccc;
+    border-top-color: #aaa;
+    padding-left: 0.05rem;
+    color: #666;
+    background: -webkit-gradient(linear,0 0,0 100%,from(#f5f5f5),to(#fdfdfd));
+}
+#main input:nth-child(3){
+    margin-top: 0.1rem;
+    background-color: #ff9000;
+    background: -webkit-gradient(linear,0 0,0 100%,from(#ffaf47),to(#ff9000));
+    border-radius: 0.05rem;
+    text-align: center;
+    font-size: 0.2rem;
+    line-height: 0.4rem;
+    overflow: hidden;
+    border: none;
+    border-bottom: 0.01rem solid #bababa;
+    width: 100%;
+    color: #fff;
+    box-shadow: 0 0 0.01rem #666;
+}
+#main label{
+    display: block;
+    font-size: 0.14rem;
+    margin-bottom: 0.5rem;
+    color: #888;
+}
+#main label input{
+    width: 0.13rem;
+    height: 0.13rem;
+    display: inline-block;
+}
+#main span{
+    font-size: 0.13rem;
+    color: #888;
+    height: 0.2rem;
+}
+
+/* 底部区域 */
+#footer{
+    width: 100%;
+    background-color: #f2f2f2;
+    padding: 0.6rem 0px;
+}
+#footer .footnav{
+    width: 100%;
+    height: 0.34rem;
+    border-top: 0.01rem solid #c4c4c4;
+    border-bottom: 0.01rem solid #c4c4c4;
+    margin-top: 0.1rem;
+}
+#footer .footnav .login{
+    float: left;
+    width: 30%;
+    height: 100%;
+    text-align: center;
+    font-size: 0.14rem;
+    line-height: 0.34rem;   
+}
+#footer .footnav .login a{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+#footer .footnav .reg{
+    float: left;
+    width: 30%;
+    height: 100%;
+    text-align: center;
+    font-size: 0.14rem;
+    line-height: 0.34rem;  
+    border-left: 0.01rem solid #c4c4c4;
+    border-right: 0.01rem solid #c4c4c4; 
+}
+#footer .footnav .reg a{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+#footer .footnav .toIndex{
+    float: left;
+    width: 40%;
+    height: 100%;
+    text-align: center;
+    font-size: 0.14rem;
+    line-height: 0.34rem;  
+}
+#footer .footnav .toIndex a{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+#footer .footnav .toIndex img{
+    margin-top: -0.03rem;
+}
+#footer .footer{
+    width: 100%;
+    height: 0.6rem;
+    background-color: #f2f2f2;
+}
+#footer .footer .text{
+    width: 100%;
+    text-align: center;
+    margin-top: 0.1rem;
+}
+#footer .footer a,span{
+    font-size: 0.12rem;
+    color: #5a5a5a;
+}
+#footer .footer a:first-child{
+    color: #ff0000;
+}
+#footer .footer .text p{
+    font-size: 0.13rem;
+    color: #5a5a5a;
+}

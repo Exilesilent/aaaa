@@ -1,0 +1,280 @@
+@import 'base.less';
+
+// 定义颜色变量
+@head-color: #ff841d;
+@border-color: #e6e6e6;
+// 头部
+#header {
+    height: 50px;
+    border-bottom: 1px solid #e6e6e6;
+    background-color: @head-color;
+    >h1 img {
+        width: 185px;
+        height: 25px;
+        margin-left: 17px;
+        padding-top: 12px;
+        float: left;
+    }
+    >a img {
+        width: 37px;
+        height: 37px;
+        float: right;
+        margin: 7px 7px 0 0;
+    }
+}
+
+// 搜索
+#search {
+    height: 30px;
+    padding: 10px;
+    border-bottom: 1px solid #e6e6e6;
+    position: relative;
+    background-color: #fff;
+    .txt {
+        width: 85%;
+        height: 30px;
+        border-radius: 15px;
+        background-color: #f1f1f1;
+        font-size: 16px;
+        padding-left: 5%;
+    }
+    .search {
+        width: 63px;
+        height: 30px;
+        color: #fff;
+        font-size: 16px;
+        background-color: @head-color;
+        border-radius: 15px;
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        line-height: 30px;
+    }
+}
+
+// 中间主题部分
+#main {
+    background-color: #fff;
+    .nav {
+        border-top: 1px solid @border-color;
+        border-bottom: 1px solid @border-color;
+        ul {
+            padding: 0 8px;
+            display: flex;
+            li {
+                flex: 1;
+                height: 40px;
+                a {
+                    display: block;
+                    line-height: 40px;
+                    text-align: center;
+                    &.active {
+                        color: #ed0000;
+                    }
+                }
+            }
+        }
+    }
+    .list {
+        ul {
+            li {
+                padding: 10px 8px;
+                a {
+                    display: flex;
+                    // display: block;
+                    .pic {
+                        width: 120px;
+                        img {
+                            width: 100%;
+                        }
+                        margin-right: 10px;
+                    }
+                    .intro {
+                        flex: 1;
+                        .tit {
+                            color: #333333;
+                            word-break: break-all;
+                            font-size: 15px;
+                            line-height: 28px;
+                            height: 56px;
+                            overflow: hidden;
+                        }
+                        .price {
+                            color: red;
+                            font-family: "Helvetica Neue", Helvetica, STHeiTi, sans-serif !important;
+                            font-weight: 600;
+                            font-size: 18px;
+                            margin: 5px 0;
+                            span {
+                                font-size: 12px;
+                            }
+                        }
+                        .detail {
+                            color: #a1a1a1;
+                            font-size: 12px;
+                            line-height: 21px;
+                            display: flex;
+                            justify-content: space-between;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    //上下页
+    .toPage {
+        padding: 25px;
+        background-color: #f2f2f2;
+        display: flex;
+        justify-content: space-between;
+        a {
+            padding: 8px 20px;
+            background: #d4d4d4;
+            box-shadow: 0 0 1px #666;
+            border-bottom: 1px solid #bababa;
+            border-radius: 5px;
+            background-image: linear-gradient(to bottom,#ededed,#d4d4d4)
+        }
+        select {
+            width: 95px;
+            padding-left: 15px;
+            border: 1px solid #bababa;
+        }
+    }
+}
+
+//相关链接
+#link {
+    line-height: 24px;
+    text-align: left;
+    padding-left: 10px;
+    a {
+        font-size: 12px;
+        color: #5a5a5a;
+    }
+}
+
+// 底部
+#low {
+    height: 34px;
+    margin-top: 25px;
+    border-top: 1px solid #c4c4c4;
+    border-bottom: 1px solid #c4c4c4;
+    display: flex;
+    a {
+        // flex: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #5a5a5a;
+        box-sizing: border-box;
+        font-size: 14px;
+        img {
+            width: 15px;
+            height: 15px;
+        }
+        &:first-child {
+            border-right: 1px solid #c4c4c4;
+            flex: 4;
+        }
+        &:nth-child(2) {
+            border-right: 1px solid #c4c4c4;
+            flex: 4;
+        }
+        &:nth-child(3) {
+            flex: 6;
+        }
+    }
+}
+// 尾部
+#foot {
+    height: 30px;
+    padding: 15px 0;
+    color: #666;
+    font-size: 12px;
+    text-align: center;
+    a:first-child {
+        color: red;
+    }
+    a:last-child {
+        color: #666;
+    }
+}
+
+//筛选页面
+#sel {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    overflow: auto;
+    // display: flex;
+    background-color: rgba(0, 0, 0, .4);
+    // overflow-y: scroll;
+    // .sel-right {
+    //     // flex: 2;
+    //     width: 20%;
+    //     height: 100%;
+    //     float: right;
+    //     background-color: #000;
+    //     opacity: 0.6;
+    // }
+    .sel-left {
+        // flex: 8;
+        width: 80%;
+        float: left;
+        background-color: #fff;
+        .head {
+            text-align: center;
+            font-size: 18px;
+            height: 44px;
+            line-height: 44px;
+            position: relative;
+            background-color: #eee;
+            i {
+                position: absolute;
+                right: 10px;
+                top: 2px;
+                font-size: 20px;
+                color: rgb(255, 80, 0);
+            }
+        }
+        .row {
+            padding: 0 12px;
+            .row-head {
+                height: 29px;
+                padding: 10px 0;
+                font-size: 14px;
+                line-height: 29px;
+                position: relative;
+                >span {
+                    display: inline-block;
+                    font-size: 12px;
+                    line-height: 8px;
+                    // margin-top: 5px;
+                    color: rgb(255, 80, 0);
+                    margin-left: 8px;
+                }
+                i {
+                    position: absolute;
+                    right: 0px;
+                }
+            }
+            .row-body {
+                li {
+                    float: left;
+                    width: 30%;
+                    background: rgb(242, 242, 242);
+                    height: 28px;
+                    border-radius: 8px;
+                    margin: 0 2% 10px 0;
+                    color: #000;
+                    text-align: center;
+                    line-height: 28px;
+                    font-size: 12px;
+                }
+            }
+        }
+    }
+}

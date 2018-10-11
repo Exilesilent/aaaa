@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <!-- 导入less文件 -->
+    <!-- <link rel="stylesheet/less" href="less/shangpin.less"> -->
+    <!-- 导入less.js文件 -->
+    <!-- <script src="lib/less/less.js"></script> -->
+    <!-- 导入shangpin.css文件 -->
+    <link rel="stylesheet" href="css/shangpin.css">
+    <!-- 导入字体图标 -->
+    <link rel="stylesheet" href="fonts/font_sn1q6atlg2m/iconfont.css">
+    <!-- 屏幕改变事件 -->
+    <script>
+        window.onresize=function(){
+            if(document.body.offsetWidth<400){
+                //判断根元素的字体大小为现在屏幕宽度除3.75
+            document.querySelector('html').style.fontSize=document.body.offsetWidth/3.75+'px';
+            // console.log(document.body.offsetWidth/3.75);
+            }else{
+                document.querySelector('html').style.fontSize='100px';
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <!-- 头部 -->
+    <header id="header">
+        <h1><a href="../index.html"><img src="img/logo.png" alt=""></a></h1>
+        <a href="#"><img src="img/load.png" alt=""></a>
+    </header>
+    <!-- 搜索 -->
+    <div id="search">
+        <input type="text" placeholder="请输入你想比价的商品" class="txt">
+        <input type="button" value="搜索" class="search">
+    </div>
+
+    <!-- 导航栏 -->
+    <nav id="nav">
+        <a href="#">首页</a>>
+        <a href="#">平板电视</a>>
+        <a href="#">海信 55EC750US
+        </a>
+    </nav>
+    <!-- 商品详情 -->
+    <div id="detail">
+        <div class='pic'>
+            <img src="img/tv1.jpg" alt="">
+        </div>
+        <div class='title'>海信</div>
+        <div class="eval">
+            <ul class="clearfix">
+                <li>当前最低：￥<span>3099.00</span></li>
+                <li>优选评论：<span>3574</span>条</li>
+            </ul>
+        </div>
+    </div>
+    <!-- 购买 -->
+    <div id="main">
+        <div class="toggle">
+            <ul class="clearfix">
+                <li><a href="javascript:;">比价购买</a></li>
+                <li><a href="javascript:;">产品参数</a></li>
+                <li><a href="javascript:;">优选评价</a></li>
+            </ul>
+        </div>
+        <div class="arrow">
+            <ul class="clearfix">
+                <li><img src="img/arrow.png" alt=""></li>
+                <li><img src="" alt=""></li>
+                <li><img src="" alt=""></li>
+            </ul>
+        </div>
+        <div class="other">
+            <ul>
+                <li>
+                    <a href="#" class="clearfix">
+                        <div class="pingtai">
+                            <img src="img/smallLogo.png" alt="">国美电器<br>
+                            <span>自营</span>
+                        </div>
+                        <div class="jiage">￥3099.00</div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="clearfix">
+                        <div class="pingtai">
+                            <img src="img/suning.png" alt="">苏宁在线<br>
+                            <span>自营</span>
+                        </div>
+                        <div class="jiage">￥3099.00</div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="lowJia">
+            该商品的历史最低价: <span>2899.00</span>
+        </div>
+        <div class="note">
+            <br>
+            * 实际价格以各网站列出的实时售价为准，我们提供的价格可能有数小时至数日的延迟。
+        </div>
+        <div class="para">
+            <!-- <img src="img/para.jpg" alt=""> -->
+        </div>
+    </div>
+    <!-- 网友评价 -->
+    <div id="eval">
+        <div class="ceil"></div>
+        <div class="head">
+            优选网友评价
+        </div>
+        <div class="table">
+            <table class="pj_list">
+                <tr>
+                    <td>魔***3 </td>
+                    <td>2017/9/1</td>
+                </tr>
+                <tr>
+                    <td>
+                        <i class="iconfont icon-caidan_wujiaoxingman"></i>
+                        <i class="iconfont icon-caidan_wujiaoxingman"></i>
+                        <i class="iconfont icon-caidan_wujiaoxingman"></i>
+                        <i class="iconfont icon-caidan_wujiaoxingman"></i>
+                        <i class="iconfont icon-caidan_wujiaoxingman"></i>
+                    </td>
+                    <td>购买自京东商城</td>
+                </tr>
+                <tr>
+                    <td colspan="2">这个东西真的非常非常的好,买了腰不痛了,腿不疼了.现在还能大跳了</td>
+                </tr>
+                <tr>
+                    <td colspan="2">回复</td>
+                </tr>
+            </table>
+            <table class="pj_list">
+                <tr>
+                    <td>魔***3 </td>
+                    <td>2017/9/1</td>
+                </tr>
+                <tr>
+                    <td>
+                        <i class="iconfont icon-caidan_wujiaoxingman"></i>
+                        <i class="iconfont icon-caidan_wujiaoxingman"></i>
+                        <i class="iconfont icon-caidan_wujiaoxingman"></i>
+                        <i class="iconfont icon-caidan_wujiaoxingman"></i>
+                        <i class="iconfont icon-caidan_wujiaoxingman"></i>
+                    </td>
+                    <td>购买自京东商城</td>
+                </tr>
+                <tr>
+                    <td colspan="2">这个东西真的非常非常的好,买了腰不痛了,腿不疼了.现在还能大跳了</td>
+                </tr>
+                <tr>
+                    <td colspan="2">回复</td>
+                </tr>
+            </table>
+        </div>
+        <div class="more">
+            <a href="#">查看更多评价</a>
+        </div>
+    </div>
+    <!-- 底部 -->
+    <div id="low">
+        <a href="../login.html">登录</a>
+        <a href="../reg.html">注册</a>
+        <a href="#"><img src="img/up.jpg">返回顶部</a>
+    </div>
+    <!-- 尾部 -->
+    <footer id="foot">
+        <p>
+            <a href="#">手机APP下载</a>
+            <a href="#">慢慢买手机版</a>
+            --掌上比价平台
+        </p>
+        <p>m.manmanbuy.com</p>
+    </footer>
+
+
+    <!-- 插入模板引擎 -->
+    <script src="lib/artTemplate/template-web.js"></script>
+    <!-- 插入模板__导航栏 -->
+    <script type="text/html" id="navTpl">
+        <a href="#">首页</a>>
+        <a href="liebiao.html?categoryid={{categoryId}}">{{ category }}</a>>
+        <a href="#">{{ productTitle }}</a>
+    </script>
+    <!-- 插入模板__商品详情 -->
+    <script type="text/html" id="detailTpl">
+        <div class='pic'>
+                {{@productImg}}
+            </div>
+            <div class='title'>{{productName}}</div>
+            <div class="eval">
+                <ul class="clearfix">
+                    <li>当前最低：￥<span>{{productPrice}}</span></li>
+                    <li>优选评论：<span>345</span>条</li>
+                </ul>
+            </div>
+    </script>
+    <!-- 插入模板__比价购买 -->
+    <script type="text/html" id="bijiaTpl">
+        <ul>
+                <li>
+                    <a href="#" class="clearfix">
+                         <div class="pingtai">
+                            <img src="img/smallLogo.png" alt="">国美电器<br>
+                            <span>自营</span>
+                         </div>
+                         <div class="jiage">￥{{productPrice}}</div>
+                    </a>
+                </li>
+                <li>
+                        <a href="#" class="clearfix">
+                             <div class="pingtai">
+                                <img src="img/suning.png" alt="">苏宁在线<br>
+                                <span>自营</span>
+                             </div>
+                             <div class="jiage">￥{{productPrice-111}}.00</div>
+                        </a>
+                    </li>
+            </ul>
+    </script>
+    <!-- 插入模板__最低价 -->
+    <script type="text/html" id="lowJiaTpl">
+        该商品的历史最低价: <span>￥{{productPrice-123}}.00</span>
+    </script>
+    <!-- 插入模板__评价 -->
+    <script type="text/html" id="evalTpl">
+        {{each list value}}
+        <table class="pj_list">
+            <tr>
+                <td>{{value.comName}}</td>
+                <td>{{value.comTime}}</td>
+            </tr>
+            <tr>
+                <td>
+                    <i class="iconfont icon-caidan_wujiaoxingman"></i>
+                    <i class="iconfont icon-caidan_wujiaoxingman"></i>
+                    <i class="iconfont icon-caidan_wujiaoxingman"></i>
+                    <i class="iconfont icon-caidan_wujiaoxingman"></i>
+                    <i class="iconfont icon-caidan_wujiaoxingman"></i>
+                    <i class="iconfont icon-caidan_wujiaoxingman"></i>
+                </td>
+                <td>{{value.comFrom}}</td>
+            </tr>
+            <tr >
+                <td colspan="2" >{{value.comContent}}</td>
+            </tr>
+            <tr>
+                <td colspan="2">回复</td>
+            </tr>
+        </table>
+        {{/each}}
+    </script>
+
+    <!-- 插入zepto -->
+    <script src="lib/zepto/zepto.min.js"></script>
+    <!-- 插入js文件 -->
+    <script src="js/shangpin.js"></script>
+</body>
+
+</html>

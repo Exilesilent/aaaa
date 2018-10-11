@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>注册</title>
+    <link rel="stylesheet" href="./css/reg.css">
+</head>
+<body>
+    <!-- 头部区域 -->
+    <header id="header">
+        <div class="logo">
+            <a href="index.html">
+                <img src="images/header_logo.png" alt="">
+            </a>
+        </div>
+        <div class="app">
+            <a href="#">
+                <img src="images/header_app.png" alt="">
+            </a>
+        </div>
+    </header>
+    <!-- 搜索区域 -->
+    <section id="search">
+        <div class="search">
+            <div class="searchBar">
+                <input type="search" placeholder="请输入你想比价的商品">
+            </div>
+            <div class="searchSub">
+                <input type="submit" value="搜索">
+            </div>
+        </div>
+    </section>
+    <!-- 注册区域 -->
+    <main id="main">
+        <form action="#">
+            <input type="text" name="userName" placeholder="请输入用户名">
+            <input type="text" name="userPwd" placeholder="密码(6-20个字符)">
+            <input type="text" name="userPhone" placeholder="请输入手机号">
+            <img src="./images/img.png" alt="">
+            <input type="text" name="img">
+            <button>获取手机验证码</button>
+            <input type="text" name="userImg" placeholder="请输入手机验证码">
+            <input type="text" name="userMail" placeholder="请输入邮箱">
+            <input type="submit" value="注册">
+        </form>
+    </main>
+    <!-- 底部区域 -->
+    <footer id="footer">
+        <div class="footnav">
+            <div class="login"><a href="login.html">登录</a></div>
+            <div class="reg"><a href="reg.html">注册</a></div>
+            <div class="toIndex"><a href="#header"><img src="images/ic_jt.png" alt="">返回顶部</a></div>
+        </div>
+        <div class="footer">
+            <div class="text">
+                <a href="#">手机APP下载</a>
+                <a href="#">慢慢买手机版</a>
+                <span>-- 掌上比价平台</span>
+                <p>m.manmanbuy.com</p>
+            </div>
+
+        </div>
+    </footer>
+</body>
+</html>
